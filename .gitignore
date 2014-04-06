@@ -1,0 +1,14 @@
+.DS_Store
+.svn
+.cvs
+*.bak
+*.swp
+Thumbs.db
+fonts
+gfx
+node_modules
+js/vendor
+outbound
+sass/bourbon
+sass/bitters
+sass/neat
