@@ -1,0 +1,273 @@
+#hero {
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	background: url(gfx/paper_back.jpg) repeat;
+	box-shadow: 1px 1px 1px 1px #666;
+}
+
+#hero_top {
+	background: url(gfx/hero_top.png) repeat-x;
+	height: 13px;
+	margin: 5px auto 0;
+}
+
+#hero_bot {
+	background: url(gfx/hero_bot.png) repeat-x;
+	height: 13px;
+	left: 112px;
+	position: absolute;
+}
+
+.hero_top_left_corner img{
+	top: 5px;
+	left: 5px;
+	position: absolute;
+	z-index: 10;
+	width: 149px;
+	height: 149px;
+}
+
+.hero_top_right_corner img {
+	top: 5px;
+	right: 5px;
+	position: absolute;
+	z-index: 10;
+	width: 149px;
+	height: 149px;
+	float: right;
+}
+
+#hero_border_left {
+	background: url(gfx/hero_left.png) repeat-y;
+	width: 13px;
+	top: 112px;
+	position: absolute;
+	left: 5px;
+}
+
+#hero_border_right {
+	background: url(gfx/hero_right.png) repeat-y;
+	width: 13px;
+	top: 112px;
+	position: absolute;
+	right: 5px;
+}
+
+.hero_bot_left_corner img {
+	margin: -50px 0 5px 5px;
+	position: relative;
+	z-index: 10;
+	width: 149px;
+	height: 149px;
+	float: left;
+
+	@include respond-to(large) {
+		margin: -90px 5px 5px 0;
+	}
+}
+
+.hero_bot_right_corner img {
+	margin: -50px 5px 5px 0;
+	position: relative;
+	z-index: 10;
+	width: 149px;
+	height: 149px;
+	float: right;
+
+	@include respond-to(large) {
+		margin: -90px 5px 5px 0;
+	}
+}
+
+.hero_wrapper {
+	@include clearfix;
+
+	.header_left_wrap {
+	width: 90%;
+	margin: 100px auto 20px;
+	overflow: hidden;
+	transition: all 0.5s ease;
+
+		@include respond-to(large) {
+			width: 25%;
+			float: left;
+			margin: 140px 0 20px 15%;
+		}
+	}
+
+	.header_right_wrap {
+	width: 90%;
+	margin: 0 auto;
+	overflow: hidden;
+	transition: all 0.5s ease;
+
+		@include respond-to(large) {
+			width: 50%;
+			float: left;
+			margin: 50px 10% 0 0;
+		}
+
+		@include respond-to(xlarge) {
+			margin: 70px 10% 0 0;
+		}
+	}
+}
+
+#hero a {
+	color: #222;
+}
+
+#hero a:hover {
+	color: black;
+}
+
+#hero h1 {
+	font-family: $font-one;
+	color: black;
+	@include font-size(4.4);
+	line-height: 65px;
+	text-align: center;
+	font-weight: 400;
+	transition: all 0.5s ease;
+
+	@include respond-to(small) {
+		@include font-size(4.8);
+		line-height: 68px;
+	}
+
+	@include respond-to(medium) {
+		@include font-size(5.4);
+		line-height: 75px;
+	}
+
+	@include respond-to(large) {
+		@include font-size(4.8);
+		line-height: 68px;
+	}
+
+	@include respond-to(xlarge) {
+		@include font-size(5.4);
+		line-height: 75px;
+	}
+}
+
+.logo_span {
+	display: block;
+}
+
+.logo_graph {
+	@include font-size(4.5);
+	color: black;
+	text-align: center;
+	width: 100%;
+	transition: all 0.5s ease;
+
+	@include respond-to(small) {
+		@include font-size(4.8);
+	}
+
+	@include respond-to(medium) {
+		@include font-size(5.4);
+	}
+
+	@include respond-to(large) {
+		@include font-size(4.8);
+	}
+
+	@include respond-to(xlarge) {
+		@include font-size(5.4);
+	}
+}
+
+.header_right_top_accent {
+	display: none;
+	transition: all 0.5s ease;
+
+	@include respond-to(large) {
+		display: block;
+		@include font-size(4);
+		text-align: center;
+	}
+}
+
+#hero h2 {
+	font-family: $font-three;
+	@include font-size(1.4);
+	line-height: 1em;
+	text-align: center;
+	width: 80%;
+	margin: 0 auto 10px;
+	color: #333;
+	text-transform: uppercase;
+	transition: all 0.5s ease;
+
+	@include respond-to(large) {
+		width: 70%;
+		margin-top: 10px;
+	}
+
+	@include respond-to(xlarge) {
+	width: 60%;
+	}
+}
+
+.no-break {
+	white-space: no-wrap;
+}
+
+.header_right_mid_accent {
+	@include font-size(1.5);
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+	display: block;
+	transition: all 0.5s ease;
+
+	@include respond-to(medium) {
+		@include font-size(2);
+	}
+
+	@include respond-to(large) {
+		display: none;
+	}
+}
+
+#hero h4 {
+	font-family: $font-two;
+	@include font-size(1);
+	line-height: 18px;
+	color: #666;
+	width: 65%;
+	margin: 0 auto 20px;
+	text-align: center;
+	padding-top: 10px;
+	transition: all 0.5s ease;
+
+	@include respond-to(large) {
+		width: 90%;
+	}
+
+	@include respond-to(xlarge) {
+		width: 75%;
+	}
+}
+
+.header_right_bot_accent {
+	display: none;
+	transition: all 0.5s ease;
+
+	@include respond-to(large) {
+		display: block;
+		@include font-size(4);
+		text-align: center;
+	}
+}
+
+.hero-bold {
+	color: #333;
+}
+
+.hero-slant {
+	font-style: italic;
+}

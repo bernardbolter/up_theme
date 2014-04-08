@@ -12,9 +12,5 @@ Text Domain: up
 
 @import "bourbon/bourbon";
 @import "bitters/bitters";
-
-$mainColor: #aaa;
-
-body {
-	background: $mainColor;
-}
+@import "base";
+@import "hero";

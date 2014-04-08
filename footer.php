@@ -1,13 +1,3 @@
-<?php
-/**
- * The template for displaying the footer.
- *
- * Contains the closing of the #content div and all content after
- *
- * @package up-theme
- */
-?>
-
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
@@ -18,6 +8,9 @@
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="<?php bloginfo( 'template_url' ); ?>/js/scripts.js"></script>
 
 <?php wp_footer(); ?>
 
