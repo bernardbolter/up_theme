@@ -1,8 +1,9 @@
 <nav id="site-navigation" class="main-navigation" role="navigation">
-	<h1 class="menu-toggle"><?php _e( 'Menu', 'up' ); ?></h1>
-	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'up' ); ?></a>
-
-	<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+	<ul>
+		<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>about">About .</a></li>
+		<li><a href="#">Prints .</a></li>
+		<li><a href="#">Contact</a></li>
+	</ul>
 </nav><!-- #site-navigation -->
 
-<div id="content" class="site-content">
+<div id="gallery" class="site-gallery">

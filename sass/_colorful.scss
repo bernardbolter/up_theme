@@ -1,0 +1,30 @@
+#colorful_wrap {
+	width: 94%;
+	margin: 20px auto;
+	display: block;
+	overflow: hidden;
+
+	.color_info_box {
+		width: 100%;
+		background: rgba(255,255,255,0.5);
+
+		h2 {
+			font-family: $font-one;
+			@include font-size(1.3);
+			text-transform: uppercase;
+			color: #333;
+			text-align: center;
+			margin: 20px 0 0 0;
+			display: block;
+		} // h2
+
+		h3 {
+			font-family: $font-three;
+			@include font-size(1.5);
+			text-align: center;
+			display: block;
+			color: $accent;
+			text-shadow: 2px 2px 2px #000;
+		}
+	} // color_info_box
+} // colorful_wrap

@@ -1,11 +1,13 @@
-	</div><!-- #content -->
+	</div><!-- #gallery -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'up' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'up' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'up' ), 'up-theme', '<a href="http://www.smoothism.com" rel="designer">Bernard John Bolter IV</a>' ); ?>
-		</div><!-- .site-info -->
+ 	<div class="footer_moulding"></div>
+	<footer id="wood_footer" class="site_wood_footer" role="contentinfo">
+		<div class="wood_contact">
+		</div><!-- .wood_contact -->
+		<div class="wood_info">
+		</div><!-- .wood_info -->
+		<div class="wood_smallprint">
+		</div><!-- .wood_smallprint -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
