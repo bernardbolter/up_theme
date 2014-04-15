@@ -11,7 +11,7 @@
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
-<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="<?php bloginfo( 'template_url' ); ?>/js/scripts.js"></script>
 
 <?php wp_footer(); ?>

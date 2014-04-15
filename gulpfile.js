@@ -20,7 +20,6 @@ var sassSources = [
 
 gulp.task('js', function() {
 	gulp.src(jsSources)
-			.pipe(uglify())
 			.pipe(concat('scripts.js'))
 			.pipe(gulp.dest('js'));
 });
