@@ -5,5 +5,3 @@
 		<li><a href="#">Contact</a></li>
 	</ul>
 </nav><!-- #site-navigation -->
-
-<div id="gallery" class="site-gallery">

@@ -5,10 +5,9 @@
 	overflow: hidden;
 
 	.color_info_box {
-		width: 310px;
-		height: 310px;
+		width: 94%;
 		background: rgba(255,255,255,0.5);
-		margin: 10px auto;
+		margin: 10px 3%;
 		display: block;
 
 		h2 {
@@ -23,7 +22,7 @@
 		} // h2
 
 		.colorful_title {
-			@include font-size(1.4);
+			@include font-size(1.2);
 			color: $accent;
 			text-shadow: 2px 2px 2px #333;
 			text-align: center;
@@ -40,7 +39,7 @@
 
 		p {
 			font-family: $font-two;
-			width: 90%;
+			width: 80%;
 			@include font-size(1);
 			line-height: 19px;
 			margin: 0 auto;
@@ -48,9 +47,9 @@
 		} // p
 
 		.color_accent {
-			@include font-size(3.5);
+			@include font-size(3);
 			text-align: center;
-			padding: 20px 0 0;
+			padding: 20px 0;
 		} // color_accent
 	} // color_info_box
 
@@ -61,14 +60,15 @@
 		margin: 10px auto;
 
 		.insta_link_img {
-			max-width: 310px;
-			max-height: 310px;
-			margin: 0 auto;
+			width: 94%;
+			margin: 0 3%;
+			height: 0;
+			padding-bottom: 94%;
 			display: block;
-			overflow: hidden;
-			box-shadow: 1px 1px 1px 1px #333;
+			box-shadow: 1px 1px 1px #333;
 			@include transition (all 1.0s ease-in-out);
 			background: $accent;
+			position: relative;
 
 			&:hover, &:focus {
 
@@ -83,13 +83,13 @@
 			}
 
 			p {
-				position: relative;
-				top: -200px;
-				@include font-size(4);
+				position: absolute;
+				top: 42%;
+				left: 14%;
+				@include font-size(3);
 				color: #fff;
 				margin: 0 auto;
 				display: block;
-				text-align: center;
 				@include opacity(0);
 				@include transition (all 1.0s ease-in-out);
 
@@ -97,30 +97,33 @@
 					display: block;
 					@include font-size(1.4);
 					text-align: center;
-					margin: 30px 0;
+					margin: 15px 0;
 				} // insta_link_text_under
 			} // p
 
 			img {
 				width: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
 				@include transition (all 1.0s ease-in-out);
 			} // img
 		} // a
 	} // instafeed
 
 	.color_tweet_box {
-		width: 310px;
+		width: 100%;
 		margin: 0px auto;
 		display: block;
-		background: rgba(255,255,255,0.5);
 
 		a.tweet_box {
-			width: 310px;
+			width: 94%;
 			margin: 10px auto;
 			display: block;
-			overflow: hidden;
 			background: rgba(255,255,255,0.5);
 			color: #333;
+			min-height: 80px;
+			position: relative;
 			@include transition (all 1.0s ease-in-out);
 
 			&:hover, &:focus {
@@ -159,11 +162,11 @@
 			} // tweet_icons
 
 			.insta_caption {
-				width: 250px;
+				width: 85%;
 				float: right;
 				margin: 0;
 				@include font-size(1.2);
-				padding:  5px 10px;
+				padding:  7px 3px 0 0;
 				color: #333;
 				letter-spacing: 0.04em;
 				line-height: 22px;
@@ -171,11 +174,10 @@
 			}
 
 			.tweet_follow {
-				position: relative;
-				top: -50px;
-				left: 55px;
+				position: absolute;
+				top: 32%;
+				left: 29%;
 				@include font-size(1.6);
-				height: 20px;
 				color: #fff;
 				@include opacity(0);
 				@include transition (all 1.0s ease-in-out);
@@ -184,11 +186,3 @@
 		} // tweet_box
 	}// color_tweet_box
 } // colorful_wrap
-
-
-
-
-
-
-
-

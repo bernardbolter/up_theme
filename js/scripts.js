@@ -324,21 +324,23 @@
 $( window ).load(function() {
 	var hero = $('#hero');
 	var head_height = hero.height();
-	$('#hero_bot').css('top', head_height).css('top', '-=18px');
-	$('#hero_border_right').css('height', head_height).css('height', '-=224px');
-	$('#hero_border_left').css('height', head_height).css('height', '-=224px');
-	$('#hero_bot').css('width', '100%').css('width', '-=224px');
-	$('#hero_top').css('width', '100%').css('width', '-=224px');
+	var head_height_bot = hero.height() - 15;
+	$('#hero_bot').css('top', head_height_bot);
+	$('#hero_border_right').css('height', head_height).css('height', '-=175px');
+	$('#hero_border_left').css('height', head_height).css('height', '-=175px');
+	$('#hero_bot').css('width', '100%').css('width', '-=175px');
+	$('#hero_top').css('width', '100%').css('width', '-=175px');
 });
 
 $( window ).resize(function() {
 	var hero_2 = $('#hero');
 	var head_height_2 = hero_2.height();
-	$('#hero_bot').css('top', head_height_2).css('top', '-=18px');
-	$('#hero_border_right').css('height', head_height_2).css('height', '-=224px');
-	$('#hero_border_left').css('height', head_height_2).css('height', '-=224px');
-	$('#hero_bot').css('width', '100%').css('width', '-=224px');
-	$('#hero_top').css('width', '100%').css('width', '-=224px');
+	var head_height_bot_2 = hero_2.height() - 15;
+	$('#hero_bot').css('top', head_height_2).css('top', '-=15px');
+	$('#hero_border_right').css('height', head_height_2).css('height', '-=175px');
+	$('#hero_border_left').css('height', head_height_2).css('height', '-=175px');
+	$('#hero_bot').css('width', '100%').css('width', '-=175px');
+	$('#hero_top').css('width', '100%').css('width', '-=175px');
 });
 
 $(document).ready(function(){

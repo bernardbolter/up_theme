@@ -3,19 +3,30 @@
 	display: block;
 	overflow: hidden;
 	background: url(gfx/paper_back.jpg) repeat;
-	box-shadow: 1px 1px 1px 1px #666;
 }
 
+.hero-bold {
+	color: #333;
+}
+
+.hero-slant {
+	font-style: italic;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+// HERO BORDER
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
 #hero_top {
-	background: url(gfx/hero_top.png) repeat-x;
-	height: 13px;
+	background: url(gfx/border/top.png) repeat-x;
+	height: 10px;
 	margin: 5px auto 0;
 }
 
 #hero_bot {
-	background: url(gfx/hero_bot.png) repeat-x;
-	height: 13px;
-	left: 112px;
+	background: url(gfx/border/bot.png) repeat-x;
+	height: 10px;
+	left: 88px;
 	position: absolute;
 }
 
@@ -24,8 +35,8 @@
 	left: 5px;
 	position: absolute;
 	z-index: 10;
-	width: 149px;
-	height: 149px;
+	width: 115px;
+	height: 115px;
 }
 
 .hero_top_right_corner img {
@@ -33,23 +44,23 @@
 	right: 5px;
 	position: absolute;
 	z-index: 10;
-	width: 149px;
-	height: 149px;
+	width: 115px;
+	height: 115px;
 	float: right;
 }
 
 #hero_border_left {
-	background: url(gfx/hero_left.png) repeat-y;
-	width: 13px;
-	top: 112px;
+	background: url(gfx/border/left.png) repeat-y;
+	width: 10px;
+	top: 88px;
 	position: absolute;
 	left: 5px;
 }
 
 #hero_border_right {
-	background: url(gfx/hero_right.png) repeat-y;
-	width: 13px;
-	top: 112px;
+	background: url(gfx/border/right.png) repeat-y;
+	width: 10px;
+	top: 88px;
 	position: absolute;
 	right: 5px;
 }
@@ -58,8 +69,8 @@
 	margin: -50px 0 5px 5px;
 	position: relative;
 	z-index: 10;
-	width: 149px;
-	height: 149px;
+	width: 115px;
+	height: 115px;
 	float: left;
 
 	@include respond-to(small) {
@@ -79,8 +90,8 @@
 	margin: -50px 5px 5px 0;
 	position: relative;
 	z-index: 10;
-	width: 149px;
-	height: 149px;
+	width: 115px;
+	height: 115px;
 	float: right;
 
 	@include respond-to(small) {
@@ -96,12 +107,16 @@
 	}
 }
 
+/////////////////////////////////////////////////////////////////////////////////////////////////
+// CONTENT WITHIN HERO - LEFT AND RIGHT
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
 .hero_wrapper {
 	@include clearfix;
 
 	.header_left_wrap {
 	width: 90%;
-	margin: 100px auto 20px;
+	margin: 60px auto 20px;
 	overflow: hidden;
 	transition: all 0.5s ease;
 
@@ -120,10 +135,76 @@
 			float: left;
 			margin: 90px 0 0 10%;
 		}
-	}
+
+		h1 {
+			font-family: $font-one;
+			color: black;
+			@include font-size(3.8);
+			line-height: 55px;
+			text-align: center;
+			font-weight: 400;
+			transition: all 0.5s ease;
+
+			@include respond-to(small) {
+				@include font-size(4.8);
+				line-height: 68px;
+			}
+
+			@include respond-to(medium) {
+				@include font-size(6);
+				line-height: 85px;
+			}
+
+			@include respond-to(large) {
+				@include font-size(5.5);
+				line-height: 77px;
+			}
+
+			@include respond-to(xlarge) {
+				@include font-size(5);
+				line-height: 70px;
+			}
+		} // h1
+
+		a {
+			color: #222;
+
+			&:hover {
+				color: black;
+			}
+		} // a
+
+		.logo_span {
+			display: block;
+		}
+
+		.logo_graph {
+			@include font-size(3.8);
+			color: black;
+			text-align: center;
+			width: 100%;
+			transition: all 0.5s ease;
+
+			@include respond-to(small) {
+				@include font-size(4.8);
+			}
+
+			@include respond-to(medium) {
+				@include font-size(5.4);
+			}
+
+			@include respond-to(large) {
+				@include font-size(4.8);
+			}
+
+			@include respond-to(xlarge) {
+				@include font-size(5.4);
+			}
+		} // logo_graph
+	} // header_left_wrap
 
 	.header_right_wrap {
-	width: 90%;
+	width: 100%;
 	margin: 0 auto;
 	overflow: hidden;
 	transition: all 0.5s ease; 
@@ -137,163 +218,89 @@
 		@include respond-to(xlarge) {
 			margin: 40px 10% 0 0;
 		}
-	}
-}
 
-#hero a {
-	color: #222;
-}
+		.header_right_top_accent {
+			display: none;
+			transition: all 0.5s ease;
 
-#hero a:hover {
-	color: black;
-}
+			@include respond-to(large) {
+				display: block;
+				@include font-size(4);
+				text-align: center;
+			}
+		}
 
-#hero h1 {
-	font-family: $font-one;
-	color: black;
-	@include font-size(4.4);
-	line-height: 65px;
-	text-align: center;
-	font-weight: 400;
-	transition: all 0.5s ease;
+		h2 {
+			font-family: $font-three;
+			@include font-size(1);
+			line-height: 1em;
+			text-align: center;
+			width: 70%;
+			margin: 0 auto 10px;
+			color: #333;
+			text-transform: uppercase;
+			transition: all 0.5s ease;
 
-	@include respond-to(small) {
-		@include font-size(4.8);
-		line-height: 68px;
-	}
+			@include respond-to(large) {
+				width: 90%;
+				margin-top: 10px;
+			}
 
-	@include respond-to(medium) {
-		@include font-size(6);
-		line-height: 85px;
-	}
+			@include respond-to(xlarge) {
+			width: 70%;
+			}
+		}//h2
 
-	@include respond-to(large) {
-		@include font-size(5.5);
-		line-height: 77px;
-	}
+		.no-break {
+			white-space: no-wrap;
+		}
 
-	@include respond-to(xlarge) {
-		@include font-size(6.2);
-		line-height: 90px;
-	}
-}
+		.header_right_mid_accent {
+			@include font-size(1);
+			width: 90%;
+			margin: 0 auto;
+			text-align: center;
+			display: block;
+			transition: all 0.5s ease;
 
-.logo_span {
-	display: block;
-}
+			@include respond-to(medium) {
+				@include font-size(1.2);
+			}
 
-.logo_graph {
-	@include font-size(4.5);
-	color: black;
-	text-align: center;
-	width: 100%;
-	transition: all 0.5s ease;
+			@include respond-to(large) {
+				display: none;
+			}
+		} // header_right_mid_accent
 
-	@include respond-to(small) {
-		@include font-size(4.8);
-	}
+		h4 {
+			font-family: $font-two;
+			@include font-size(0.8);
+			line-height: 18px;
+			color: #666;
+			width: 65%;
+			margin: 0 auto 20px;
+			text-align: center;
+			padding-top: 10px;
+			transition: all 0.5s ease;
 
-	@include respond-to(medium) {
-		@include font-size(5.4);
-	}
+			@include respond-to(large) {
+				width: 90%;
+			}
 
-	@include respond-to(large) {
-		@include font-size(4.8);
-	}
+			@include respond-to(xlarge) {
+				width: 75%;
+			}
+		} // h4
 
-	@include respond-to(xlarge) {
-		@include font-size(5.4);
-	}
-}
+		.header_right_bot_accent {
+			display: none;
+			transition: all 0.5s ease;
 
-.header_right_top_accent {
-	display: none;
-	transition: all 0.5s ease;
-
-	@include respond-to(large) {
-		display: block;
-		@include font-size(4);
-		text-align: center;
-	}
-}
-
-#hero h2 {
-	font-family: $font-three;
-	@include font-size(1.4);
-	line-height: 1em;
-	text-align: center;
-	width: 80%;
-	margin: 0 auto 10px;
-	color: #333;
-	text-transform: uppercase;
-	transition: all 0.5s ease;
-
-	@include respond-to(large) {
-		width: 90%;
-		margin-top: 10px;
-	}
-
-	@include respond-to(xlarge) {
-	width: 70%;
-	}
-}
-
-.no-break {
-	white-space: no-wrap;
-}
-
-.header_right_mid_accent {
-	@include font-size(1);
-	width: 90%;
-	margin: 0 auto;
-	text-align: center;
-	display: block;
-	transition: all 0.5s ease;
-
-	@include respond-to(medium) {
-		@include font-size(1.2);
-	}
-
-	@include respond-to(large) {
-		display: none;
-	}
-}
-
-#hero h4 {
-	font-family: $font-two;
-	@include font-size(1);
-	line-height: 18px;
-	color: #666;
-	width: 65%;
-	margin: 0 auto 20px;
-	text-align: center;
-	padding-top: 10px;
-	transition: all 0.5s ease;
-
-	@include respond-to(large) {
-		width: 90%;
-	}
-
-	@include respond-to(xlarge) {
-		width: 75%;
-	}
-}
-
-.header_right_bot_accent {
-	display: none;
-	transition: all 0.5s ease;
-
-	@include respond-to(large) {
-		display: block;
-		@include font-size(4);
-		text-align: center;
-	}
-}
-
-.hero-bold {
-	color: #333;
-}
-
-.hero-slant {
-	font-style: italic;
-}
+			@include respond-to(large) {
+				display: block;
+				@include font-size(4);
+				text-align: center;
+			}
+		} // header_right_bot_accent
+	} // header_right_wrap
+} // hero_wrapper

@@ -5,3 +5,96 @@
 	background: url(gfx/gallery_back.jpg) repeat;
 	box-shadow: inset 0 9px 2px -6px #333;
 }
+
+.frame_rap {
+	width: 100%;
+	display: block;
+	overflow: hidden;
+
+	a {
+		width: 300px;
+		height: 300px;
+		margin: 20px auto;
+		display: block;
+		box-shadow: 7px 7px 7px #333;
+
+		.frame_top {
+			@include clearfix;
+
+			.frame_top_left {
+				width: 43px;
+				height: 43px;
+				background: url(gfx/frame/top_left.png) no-repeat;
+				float: left;
+			} // frame_top_left
+
+			.frame_top_mid {
+				width: 214px;
+				height: 43px;
+				background: url(gfx/frame/top.png) repeat-x;
+				float: left;
+			} // frame_top_mid
+
+			.frame_top_right {
+				width: 43px;
+				height: 43px;
+				background: url(gfx/frame/top_right.png) no-repeat;
+				float: left;
+			} // frame_top_right
+		} // frame_top
+
+		.frame_mid {
+			@include clearfix;
+
+			.frame_mid_left {
+				width: 43px;
+				height: 214px;
+				background: url(gfx/frame/left.png) repeat-y;
+				float: left;
+			} // frame_mid_left
+
+			.frame_image {
+				background: $accent;
+				width: 214px;
+				height: 214px;
+				float: left;
+
+				img {
+					width: 100%;
+				} // img
+			} // frame_image
+
+			.frame_mid_right {
+				width: 43px;
+				height: 214px;
+				background: url(gfx/frame/right.png) repeat-y;
+				float: left;
+			} // frame_mid_right
+		} // frame_mid
+
+		.frame_bot {
+			@include clearfix;
+
+			.frame_bot_left {
+				width: 43px;
+				height: 43px;
+				background: url(gfx/frame/bot_left.png) no-repeat;
+				float: left;
+			} // frame_bot_left
+
+			.frame_bot_mid {
+				width: 214px;
+				height: 43px;
+				background: url(gfx/frame/bot.png) repeat-x;
+				float: left;
+			} // frame_bot_mid
+
+			.frame_bot_right {
+				width: 43px;
+				height: 43px;
+				background: url(gfx/frame/bot_right.png) no-repeat;
+				float: left;
+			} // frame_bot_right
+		} // frame_bot
+	} //a
+} // frame_rap

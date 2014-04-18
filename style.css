@@ -377,19 +377,23 @@ body {
   width: 100%;
   display: block;
   overflow: hidden;
-  background: url(gfx/paper_back.jpg) repeat;
-  -webkit-box-shadow: 1px 1px 1px 1px #666;
-  box-shadow: 1px 1px 1px 1px #666; }
+  background: url(gfx/paper_back.jpg) repeat; }
+
+.hero-bold {
+  color: #333; }
+
+.hero-slant {
+  font-style: italic; }
 
 #hero_top {
-  background: url(gfx/hero_top.png) repeat-x;
-  height: 13px;
+  background: url(gfx/border/top.png) repeat-x;
+  height: 10px;
   margin: 5px auto 0; }
 
 #hero_bot {
-  background: url(gfx/hero_bot.png) repeat-x;
-  height: 13px;
-  left: 112px;
+  background: url(gfx/border/bot.png) repeat-x;
+  height: 10px;
+  left: 88px;
   position: absolute; }
 
 .hero_top_left_corner img {
@@ -397,29 +401,29 @@ body {
   left: 5px;
   position: absolute;
   z-index: 10;
-  width: 149px;
-  height: 149px; }
+  width: 115px;
+  height: 115px; }
 
 .hero_top_right_corner img {
   top: 5px;
   right: 5px;
   position: absolute;
   z-index: 10;
-  width: 149px;
-  height: 149px;
+  width: 115px;
+  height: 115px;
   float: right; }
 
 #hero_border_left {
-  background: url(gfx/hero_left.png) repeat-y;
-  width: 13px;
-  top: 112px;
+  background: url(gfx/border/left.png) repeat-y;
+  width: 10px;
+  top: 88px;
   position: absolute;
   left: 5px; }
 
 #hero_border_right {
-  background: url(gfx/hero_right.png) repeat-y;
-  width: 13px;
-  top: 112px;
+  background: url(gfx/border/right.png) repeat-y;
+  width: 10px;
+  top: 88px;
   position: absolute;
   right: 5px; }
 
@@ -427,8 +431,8 @@ body {
   margin: -50px 0 5px 5px;
   position: relative;
   z-index: 10;
-  width: 149px;
-  height: 149px;
+  width: 115px;
+  height: 115px;
   float: left; }
   @media only screen and (min-width: 401px) {
     .hero_bot_left_corner img {
@@ -444,8 +448,8 @@ body {
   margin: -50px 5px 5px 0;
   position: relative;
   z-index: 10;
-  width: 149px;
-  height: 149px;
+  width: 115px;
+  height: 115px;
   float: right; }
   @media only screen and (min-width: 401px) {
     .hero_bot_right_corner img {
@@ -466,7 +470,7 @@ body {
     clear: both; }
   .hero_wrapper .header_left_wrap {
     width: 90%;
-    margin: 100px auto 20px;
+    margin: 60px auto 20px;
     overflow: hidden;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease; }
@@ -483,8 +487,68 @@ body {
         width: 30%;
         float: left;
         margin: 90px 0 0 10%; } }
+    .hero_wrapper .header_left_wrap h1 {
+      font-family: league_gothicregular, sans-serif;
+      color: black;
+      font-size: 38px;
+      font-size: 3.8rem;
+      line-height: 55px;
+      text-align: center;
+      font-weight: 400;
+      -webkit-transition: all 0.5s ease;
+      transition: all 0.5s ease; }
+      @media only screen and (min-width: 401px) {
+        .hero_wrapper .header_left_wrap h1 {
+          font-size: 48px;
+          font-size: 4.8rem;
+          line-height: 68px; } }
+      @media only screen and (min-width: 600px) {
+        .hero_wrapper .header_left_wrap h1 {
+          font-size: 60px;
+          font-size: 6rem;
+          line-height: 85px; } }
+      @media only screen and (min-width: 769px) {
+        .hero_wrapper .header_left_wrap h1 {
+          font-size: 55px;
+          font-size: 5.5rem;
+          line-height: 77px; } }
+      @media only screen and (min-width: 1025px) {
+        .hero_wrapper .header_left_wrap h1 {
+          font-size: 50px;
+          font-size: 5rem;
+          line-height: 70px; } }
+    .hero_wrapper .header_left_wrap a {
+      color: #222; }
+      .hero_wrapper .header_left_wrap a:hover {
+        color: black; }
+    .hero_wrapper .header_left_wrap .logo_span {
+      display: block; }
+    .hero_wrapper .header_left_wrap .logo_graph {
+      font-size: 38px;
+      font-size: 3.8rem;
+      color: black;
+      text-align: center;
+      width: 100%;
+      -webkit-transition: all 0.5s ease;
+      transition: all 0.5s ease; }
+      @media only screen and (min-width: 401px) {
+        .hero_wrapper .header_left_wrap .logo_graph {
+          font-size: 48px;
+          font-size: 4.8rem; } }
+      @media only screen and (min-width: 600px) {
+        .hero_wrapper .header_left_wrap .logo_graph {
+          font-size: 54px;
+          font-size: 5.4rem; } }
+      @media only screen and (min-width: 769px) {
+        .hero_wrapper .header_left_wrap .logo_graph {
+          font-size: 48px;
+          font-size: 4.8rem; } }
+      @media only screen and (min-width: 1025px) {
+        .hero_wrapper .header_left_wrap .logo_graph {
+          font-size: 54px;
+          font-size: 5.4rem; } }
   .hero_wrapper .header_right_wrap {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     overflow: hidden;
     -webkit-transition: all 0.5s ease;
@@ -497,158 +561,81 @@ body {
     @media only screen and (min-width: 1025px) {
       .hero_wrapper .header_right_wrap {
         margin: 40px 10% 0 0; } }
-
-#hero a {
-  color: #222; }
-
-#hero a:hover {
-  color: black; }
-
-#hero h1 {
-  font-family: league_gothicregular, sans-serif;
-  color: black;
-  font-size: 44px;
-  font-size: 4.4rem;
-  line-height: 65px;
-  text-align: center;
-  font-weight: 400;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
-  @media only screen and (min-width: 401px) {
-    #hero h1 {
-      font-size: 48px;
-      font-size: 4.8rem;
-      line-height: 68px; } }
-  @media only screen and (min-width: 600px) {
-    #hero h1 {
-      font-size: 60px;
-      font-size: 6rem;
-      line-height: 85px; } }
-  @media only screen and (min-width: 769px) {
-    #hero h1 {
-      font-size: 55px;
-      font-size: 5.5rem;
-      line-height: 77px; } }
-  @media only screen and (min-width: 1025px) {
-    #hero h1 {
-      font-size: 62px;
-      font-size: 6.2rem;
-      line-height: 90px; } }
-
-.logo_span {
-  display: block; }
-
-.logo_graph {
-  font-size: 45px;
-  font-size: 4.5rem;
-  color: black;
-  text-align: center;
-  width: 100%;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
-  @media only screen and (min-width: 401px) {
-    .logo_graph {
-      font-size: 48px;
-      font-size: 4.8rem; } }
-  @media only screen and (min-width: 600px) {
-    .logo_graph {
-      font-size: 54px;
-      font-size: 5.4rem; } }
-  @media only screen and (min-width: 769px) {
-    .logo_graph {
-      font-size: 48px;
-      font-size: 4.8rem; } }
-  @media only screen and (min-width: 1025px) {
-    .logo_graph {
-      font-size: 54px;
-      font-size: 5.4rem; } }
-
-.header_right_top_accent {
-  display: none;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
-  @media only screen and (min-width: 769px) {
-    .header_right_top_accent {
-      display: block;
-      font-size: 40px;
-      font-size: 4rem;
-      text-align: center; } }
-
-#hero h2 {
-  font-family: acknowledgementmedium, sans-serif;
-  font-size: 14px;
-  font-size: 1.4rem;
-  line-height: 1em;
-  text-align: center;
-  width: 80%;
-  margin: 0 auto 10px;
-  color: #333;
-  text-transform: uppercase;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
-  @media only screen and (min-width: 769px) {
-    #hero h2 {
+    .hero_wrapper .header_right_wrap .header_right_top_accent {
+      display: none;
+      -webkit-transition: all 0.5s ease;
+      transition: all 0.5s ease; }
+      @media only screen and (min-width: 769px) {
+        .hero_wrapper .header_right_wrap .header_right_top_accent {
+          display: block;
+          font-size: 40px;
+          font-size: 4rem;
+          text-align: center; } }
+    .hero_wrapper .header_right_wrap h2 {
+      font-family: acknowledgementmedium, sans-serif;
+      font-size: 10px;
+      font-size: 1rem;
+      line-height: 1em;
+      text-align: center;
+      width: 70%;
+      margin: 0 auto 10px;
+      color: #333;
+      text-transform: uppercase;
+      -webkit-transition: all 0.5s ease;
+      transition: all 0.5s ease; }
+      @media only screen and (min-width: 769px) {
+        .hero_wrapper .header_right_wrap h2 {
+          width: 90%;
+          margin-top: 10px; } }
+      @media only screen and (min-width: 1025px) {
+        .hero_wrapper .header_right_wrap h2 {
+          width: 70%; } }
+    .hero_wrapper .header_right_wrap .no-break {
+      white-space: no-wrap; }
+    .hero_wrapper .header_right_wrap .header_right_mid_accent {
+      font-size: 10px;
+      font-size: 1rem;
       width: 90%;
-      margin-top: 10px; } }
-  @media only screen and (min-width: 1025px) {
-    #hero h2 {
-      width: 70%; } }
-
-.no-break {
-  white-space: no-wrap; }
-
-.header_right_mid_accent {
-  font-size: 10px;
-  font-size: 1rem;
-  width: 90%;
-  margin: 0 auto;
-  text-align: center;
-  display: block;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
-  @media only screen and (min-width: 600px) {
-    .header_right_mid_accent {
-      font-size: 12px;
-      font-size: 1.2rem; } }
-  @media only screen and (min-width: 769px) {
-    .header_right_mid_accent {
-      display: none; } }
-
-#hero h4 {
-  font-family: leanderregular, serif;
-  font-size: 10px;
-  font-size: 1rem;
-  line-height: 18px;
-  color: #666;
-  width: 65%;
-  margin: 0 auto 20px;
-  text-align: center;
-  padding-top: 10px;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
-  @media only screen and (min-width: 769px) {
-    #hero h4 {
-      width: 90%; } }
-  @media only screen and (min-width: 1025px) {
-    #hero h4 {
-      width: 75%; } }
-
-.header_right_bot_accent {
-  display: none;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
-  @media only screen and (min-width: 769px) {
-    .header_right_bot_accent {
+      margin: 0 auto;
+      text-align: center;
       display: block;
-      font-size: 40px;
-      font-size: 4rem;
-      text-align: center; } }
-
-.hero-bold {
-  color: #333; }
-
-.hero-slant {
-  font-style: italic; }
+      -webkit-transition: all 0.5s ease;
+      transition: all 0.5s ease; }
+      @media only screen and (min-width: 600px) {
+        .hero_wrapper .header_right_wrap .header_right_mid_accent {
+          font-size: 12px;
+          font-size: 1.2rem; } }
+      @media only screen and (min-width: 769px) {
+        .hero_wrapper .header_right_wrap .header_right_mid_accent {
+          display: none; } }
+    .hero_wrapper .header_right_wrap h4 {
+      font-family: leanderregular, serif;
+      font-size: 8px;
+      font-size: 0.8rem;
+      line-height: 18px;
+      color: #666;
+      width: 65%;
+      margin: 0 auto 20px;
+      text-align: center;
+      padding-top: 10px;
+      -webkit-transition: all 0.5s ease;
+      transition: all 0.5s ease; }
+      @media only screen and (min-width: 769px) {
+        .hero_wrapper .header_right_wrap h4 {
+          width: 90%; } }
+      @media only screen and (min-width: 1025px) {
+        .hero_wrapper .header_right_wrap h4 {
+          width: 75%; } }
+    .hero_wrapper .header_right_wrap .header_right_bot_accent {
+      display: none;
+      -webkit-transition: all 0.5s ease;
+      transition: all 0.5s ease; }
+      @media only screen and (min-width: 769px) {
+        .hero_wrapper .header_right_wrap .header_right_bot_accent {
+          display: block;
+          font-size: 40px;
+          font-size: 4rem;
+          text-align: center; } }
 
 #site-navigation {
   width: 100%;
@@ -685,6 +672,86 @@ body {
   -webkit-box-shadow: inset 0 9px 2px -6px #333;
   box-shadow: inset 0 9px 2px -6px #333; }
 
+.frame_rap {
+  width: 100%;
+  display: block;
+  overflow: hidden; }
+  .frame_rap a {
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+    display: block;
+    -webkit-box-shadow: 7px 7px 7px #333;
+    box-shadow: 7px 7px 7px #333; }
+    .frame_rap a .frame_top {
+      *zoom: 1; }
+      .frame_rap a .frame_top:before, .frame_rap a .frame_top:after {
+        content: " ";
+        display: table; }
+      .frame_rap a .frame_top:after {
+        clear: both; }
+      .frame_rap a .frame_top .frame_top_left {
+        width: 43px;
+        height: 43px;
+        background: url(gfx/frame/top_left.png) no-repeat;
+        float: left; }
+      .frame_rap a .frame_top .frame_top_mid {
+        width: 214px;
+        height: 43px;
+        background: url(gfx/frame/top.png) repeat-x;
+        float: left; }
+      .frame_rap a .frame_top .frame_top_right {
+        width: 43px;
+        height: 43px;
+        background: url(gfx/frame/top_right.png) no-repeat;
+        float: left; }
+    .frame_rap a .frame_mid {
+      *zoom: 1; }
+      .frame_rap a .frame_mid:before, .frame_rap a .frame_mid:after {
+        content: " ";
+        display: table; }
+      .frame_rap a .frame_mid:after {
+        clear: both; }
+      .frame_rap a .frame_mid .frame_mid_left {
+        width: 43px;
+        height: 214px;
+        background: url(gfx/frame/left.png) repeat-y;
+        float: left; }
+      .frame_rap a .frame_mid .frame_image {
+        background: red;
+        width: 214px;
+        height: 214px;
+        float: left; }
+        .frame_rap a .frame_mid .frame_image img {
+          width: 100%; }
+      .frame_rap a .frame_mid .frame_mid_right {
+        width: 43px;
+        height: 214px;
+        background: url(gfx/frame/right.png) repeat-y;
+        float: left; }
+    .frame_rap a .frame_bot {
+      *zoom: 1; }
+      .frame_rap a .frame_bot:before, .frame_rap a .frame_bot:after {
+        content: " ";
+        display: table; }
+      .frame_rap a .frame_bot:after {
+        clear: both; }
+      .frame_rap a .frame_bot .frame_bot_left {
+        width: 43px;
+        height: 43px;
+        background: url(gfx/frame/bot_left.png) no-repeat;
+        float: left; }
+      .frame_rap a .frame_bot .frame_bot_mid {
+        width: 214px;
+        height: 43px;
+        background: url(gfx/frame/bot.png) repeat-x;
+        float: left; }
+      .frame_rap a .frame_bot .frame_bot_right {
+        width: 43px;
+        height: 43px;
+        background: url(gfx/frame/bot_right.png) no-repeat;
+        float: left; }
+
 .footer_moulding {
   width: 100%;
   height: 36px;
@@ -698,10 +765,9 @@ body {
   display: block;
   overflow: hidden; }
   #colorful_wrap .color_info_box {
-    width: 310px;
-    height: 310px;
+    width: 94%;
     background: rgba(255, 255, 255, 0.5);
-    margin: 10px auto;
+    margin: 10px 3%;
     display: block; }
     #colorful_wrap .color_info_box h2 {
       font-family: league_gothicregular, sans-serif;
@@ -714,8 +780,8 @@ body {
       padding: 20px 0 10px 0;
       display: block; }
     #colorful_wrap .color_info_box .colorful_title {
-      font-size: 14px;
-      font-size: 1.4rem;
+      font-size: 12px;
+      font-size: 1.2rem;
       color: red;
       text-shadow: 2px 2px 2px #333;
       text-align: center; }
@@ -729,33 +795,34 @@ body {
       margin: 10px 0 20px; }
     #colorful_wrap .color_info_box p {
       font-family: leanderregular, serif;
-      width: 90%;
+      width: 80%;
       font-size: 10px;
       font-size: 1rem;
       line-height: 19px;
       margin: 0 auto;
       text-indent: 25px; }
     #colorful_wrap .color_info_box .color_accent {
-      font-size: 35px;
-      font-size: 3.5rem;
+      font-size: 30px;
+      font-size: 3rem;
       text-align: center;
-      padding: 20px 0 0; }
+      padding: 20px 0; }
   #colorful_wrap #instafeed {
     width: 100%;
     display: block;
     overflow: hidden;
     margin: 10px auto; }
     #colorful_wrap #instafeed .insta_link_img {
-      max-width: 310px;
-      max-height: 310px;
-      margin: 0 auto;
+      width: 94%;
+      margin: 0 3%;
+      height: 0;
+      padding-bottom: 94%;
       display: block;
-      overflow: hidden;
-      -webkit-box-shadow: 1px 1px 1px 1px #333;
-      box-shadow: 1px 1px 1px 1px #333;
+      -webkit-box-shadow: 1px 1px 1px #333;
+      box-shadow: 1px 1px 1px #333;
       -webkit-transition: all 1s ease-in-out;
       transition: all 1s ease-in-out;
-      background: red; }
+      background: red;
+      position: relative; }
       #colorful_wrap #instafeed .insta_link_img:hover p, #colorful_wrap #instafeed .insta_link_img:focus p {
         opacity: 1;
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
@@ -765,14 +832,14 @@ body {
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
         filter: alpha(opacity=50); }
       #colorful_wrap #instafeed .insta_link_img p {
-        position: relative;
-        top: -200px;
-        font-size: 40px;
-        font-size: 4rem;
+        position: absolute;
+        top: 42%;
+        left: 14%;
+        font-size: 30px;
+        font-size: 3rem;
         color: #fff;
         margin: 0 auto;
         display: block;
-        text-align: center;
         opacity: 0;
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
         filter: alpha(opacity=0);
@@ -783,23 +850,26 @@ body {
           font-size: 14px;
           font-size: 1.4rem;
           text-align: center;
-          margin: 30px 0; }
+          margin: 15px 0; }
       #colorful_wrap #instafeed .insta_link_img img {
         width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
         -webkit-transition: all 1s ease-in-out;
         transition: all 1s ease-in-out; }
   #colorful_wrap .color_tweet_box {
-    width: 310px;
+    width: 100%;
     margin: 0px auto;
-    display: block;
-    background: rgba(255, 255, 255, 0.5); }
+    display: block; }
     #colorful_wrap .color_tweet_box a.tweet_box {
-      width: 310px;
+      width: 94%;
       margin: 10px auto;
       display: block;
-      overflow: hidden;
       background: rgba(255, 255, 255, 0.5);
       color: #333;
+      min-height: 80px;
+      position: relative;
       -webkit-transition: all 1s ease-in-out;
       transition: all 1s ease-in-out; }
       #colorful_wrap .color_tweet_box a.tweet_box:hover, #colorful_wrap .color_tweet_box a.tweet_box:focus {
@@ -840,24 +910,23 @@ body {
           #colorful_wrap .color_tweet_box a.tweet_box .tweet_icons span .icon-twitter {
             margin: 5px 5px 0 5px; }
       #colorful_wrap .color_tweet_box a.tweet_box .insta_caption {
-        width: 250px;
+        width: 85%;
         float: right;
         margin: 0;
         font-size: 12px;
         font-size: 1.2rem;
-        padding: 5px 10px;
+        padding: 7px 3px 0 0;
         color: #333;
         letter-spacing: 0.04em;
         line-height: 22px;
         -webkit-transition: all 1s ease-in-out;
         transition: all 1s ease-in-out; }
       #colorful_wrap .color_tweet_box a.tweet_box .tweet_follow {
-        position: relative;
-        top: -50px;
-        left: 55px;
+        position: absolute;
+        top: 32%;
+        left: 29%;
         font-size: 16px;
         font-size: 1.6rem;
-        height: 20px;
         color: #fff;
         opacity: 0;
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
