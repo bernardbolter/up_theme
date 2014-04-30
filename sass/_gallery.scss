@@ -3,20 +3,62 @@
 	overflow: hidden;
 	display: block;
 	background: url(gfx/gallery_back.jpg) repeat;
-	box-shadow: inset 0 9px 2px -6px #333;
+}
+
+.gallery_rap {
+	padding: 0 0 20px 0;
+
+	@include respond-to(medium) {
+		width: 700px;
+		margin: 0 auto;
+	}
+
+	@include respond-to(large) {
+		width: 1050px;
+		margin: 0 auto 20px;
+	}
+
+	@include respond-to(xlarge) {
+		width: 1400px;
+		margin: 0 auto 20px;
+	}
 }
 
 .frame_rap {
-	width: 100%;
+	width: 300px;
 	display: block;
 	overflow: hidden;
+	margin: 10px auto;
+	
+	@include respond-to(small) {
+		width: 330px;
+	}
+
+	@include respond-to(medium) {
+		float: left;
+		margin: 25px 10px 0;
+	}
 
 	a {
-		width: 300px;
-		height: 300px;
+		width: 270px;
+		height: 270px;
 		margin: 20px auto;
 		display: block;
 		box-shadow: 7px 7px 7px #333;
+
+		@include respond-to(small) {
+			margin: 20px 20px;
+			width: 300px;
+			height: 300px;
+		}
+
+		&:hover section div img {
+			@include opacity(0.3);
+		}
+
+		&:hover section div p.gallery_hashtag {
+			display: block;
+		}
 
 		.frame_top {
 			@include clearfix;
@@ -29,10 +71,14 @@
 			} // frame_top_left
 
 			.frame_top_mid {
-				width: 214px;
+				width: 184px;
 				height: 43px;
 				background: url(gfx/frame/top.png) repeat-x;
 				float: left;
+
+				@include respond-to(small) {
+					width: 214px;
+				}
 			} // frame_top_mid
 
 			.frame_top_right {
@@ -48,27 +94,66 @@
 
 			.frame_mid_left {
 				width: 43px;
-				height: 214px;
+				height: 184px;
 				background: url(gfx/frame/left.png) repeat-y;
 				float: left;
+
+				@include respond-to(small) {
+					height: 214px;
+				}
 			} // frame_mid_left
 
 			.frame_image {
-				background: $accent;
-				width: 214px;
-				height: 214px;
+				background: #fff;
+				width: 184px;
+				height: 184px;
 				float: left;
+
+				@include respond-to(small) {
+					height: 214px;
+					width: 214px;
+				}
 
 				img {
 					width: 100%;
+					@include transition (all 1.0s ease-in-out);
 				} // img
+
+				p {
+					margin: -180px 0 0;
+					word-wrap: break-word;
+					@include font-size(1.3);
+					line-height: 30px;
+					color: #000;
+					z-index: 999;
+					padding: 10px;
+					display: none;
+					letter-spacing: 0.02em;
+
+					@include respond-to(small) {
+						margin: -220px 0 0;
+					}
+
+
+					span.frame_click {
+						display: block;
+						@include font-size(0.9);
+						color: #888;
+						margin: 0;
+						font-weight: 200;
+					}
+				}
 			} // frame_image
 
 			.frame_mid_right {
 				width: 43px;
-				height: 214px;
+				height: 184px;
 				background: url(gfx/frame/right.png) repeat-y;
 				float: left;
+
+				@include respond-to(small) {
+					height: 214px;
+				}
 			} // frame_mid_right
 		} // frame_mid
 
@@ -83,10 +168,14 @@
 			} // frame_bot_left
 
 			.frame_bot_mid {
-				width: 214px;
+				width: 184px;
 				height: 43px;
 				background: url(gfx/frame/bot.png) repeat-x;
 				float: left;
+
+				@include respond-to(small) {
+					width: 214px;
+				}
 			} // frame_bot_mid
 
 			.frame_bot_right {
@@ -97,4 +186,31 @@
 			} // frame_bot_right
 		} // frame_bot
 	} //a
+	.frame_tag {
+	width: 200px;
+	margin: 20px 10px 10px 90px;
+	background: #fff;
+	box-shadow: 2px 2px 2px #333;
+	display: block;
+
+	.frame_tag_title {
+		font-family: $font-one;
+		@include font-size(1.6);
+		line-height: 22px;
+		color: #333;
+		margin: 0;
+		text-align: right;
+		padding: 15px 10px 5px; 
+	} // frame_tag_title
+
+	.frame_tag_info {
+		font-family: $font-two;
+		@include font-size(0.8);
+		line-height: 11px;
+		color: #222;
+		margin: 0;
+		text-align: right;
+		padding: 0px 10px 10px;
+	} // frame_tag_info
+} // frame_tag
 } // frame_rap

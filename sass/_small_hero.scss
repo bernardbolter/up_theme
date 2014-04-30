@@ -1,0 +1,48 @@
+#small_hero {
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	background: url(gfx/paper_back.jpg) repeat;
+	box-shadow: 0 4px 4px 0 #444;
+	position: relative;
+	z-index: 999;
+
+	.small_hero_wrapper {
+		@include clearfix;
+	}
+
+	a {
+		display: block;
+		text-decoration: none;
+		margin: 5px auto;
+		overflow: hidden;
+		color: #222;
+		width: 230px;
+
+		@include respond-to(small-medium) {
+			width: 380px;
+		}
+
+		img {
+			display: inline-block;
+			float: left;
+			height: 30px;
+			margin: 8px 10px 0;
+		}
+
+		h1 {
+			font-family: $font-one;
+			@include font-size(2.2);
+			float: left;
+			letter-spacing: 0.03em;
+		}
+	}
+}
+
+.hide_title {
+	display: none;
+
+	@include respond-to(small-medium) {
+		display: inline;
+	}
+}

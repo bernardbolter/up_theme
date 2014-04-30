@@ -84,3 +84,5 @@ add_action( 'widgets_init', 'up_widgets_init' );
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/jetpack.php';
+
+add_filter( 'show_admin_bar', '__return_false' );

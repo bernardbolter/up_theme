@@ -1,0 +1,40 @@
+#painting {
+	width: 100%;
+	overflow: hidden;
+	background-repeat: repeat;
+
+	.painting_rap {
+		width: 90%;
+		max-width: 1050px;
+		margin: 15px auto;
+
+		h1 {
+			background: white;
+			box-shadow: 2px 2px 2px 2px #333;
+			font-family: $font-one;
+			@include font-size(1.7);
+			letter-spacing: 0.03em;
+			color: #232323;
+			padding: 7px 20px 1px;
+			margin: 10px 0;
+			overflow: hidden;
+			display: inline-block;
+
+			@include respond-to(medium) {
+				@include font-size(2);
+				margin: 15px 0;
+			}
+
+			@include respond-to(large) {
+				@include font-size(2.3);
+				margin: 20px 0;
+			}
+		} // H1
+
+		img {
+			box-shadow: 7px 7px 7px 2px #333;
+			width: 100%;
+		} // .teh_painting
+
+	} // .painting_rap
+} // #painting

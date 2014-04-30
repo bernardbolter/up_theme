@@ -3,6 +3,14 @@
 	display: block;
 	overflow: hidden;
 	background: url(gfx/paper_back.jpg) repeat;
+	height: 560px;
+	box-shadow: 0 4px 4px 0 #444;
+	position: relative;
+	z-index: 999;
+
+	@include respond-to(medium) {
+		height: 360px;
+	}
 }
 
 .hero-bold {
@@ -12,6 +20,13 @@
 .hero-slant {
 	font-style: italic;
 }
+
+.drop-shadow {
+	width: 100%;
+	height: 8px;
+	background: url(gfx/shadow.png) repeat-x;
+	z-index: 999;
+} 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
 // HERO BORDER
@@ -27,7 +42,12 @@
 	background: url(gfx/border/bot.png) repeat-x;
 	height: 10px;
 	left: 88px;
+	top: 545px;
 	position: absolute;
+
+	@include respond-to(medium) {
+		top: 345px;
+	}
 }
 
 .hero_top_left_corner img {
@@ -53,57 +73,61 @@
 	background: url(gfx/border/left.png) repeat-y;
 	width: 10px;
 	top: 88px;
+	height: 385px;
 	position: absolute;
 	left: 5px;
+
+	@include respond-to(medium) {
+		height: 184px;
+	}
 }
 
 #hero_border_right {
 	background: url(gfx/border/right.png) repeat-y;
 	width: 10px;
 	top: 88px;
+	height: 385px;
 	position: absolute;
 	right: 5px;
+
+	@include respond-to(medium) {
+		height: 184px;
+	}
 }
 
 .hero_bot_left_corner img {
-	margin: -50px 0 5px 5px;
-	position: relative;
+	margin: 0;
+	position: absolute;
 	z-index: 10;
 	width: 115px;
 	height: 115px;
-	float: left;
-
-	@include respond-to(small) {
-		margin: -70px 0 5px 5px;
-	}
+	left: 5px;
+	top: 440px;
 
 	@include respond-to(medium) {
-		margin: -80px 0 5px 5px;
+		top: 240px;
 	}
 
 	@include respond-to(large) {
-		margin: -90px 0 5px 5px;
+		
 	}
 }
 
 .hero_bot_right_corner img {
-	margin: -50px 5px 5px 0;
-	position: relative;
+	margin: 0;
+	position: absolute;
 	z-index: 10;
 	width: 115px;
 	height: 115px;
-	float: right;
-
-	@include respond-to(small) {
-		margin: -70px 5px 5px 0;
-	}
+	right: 5px;
+	top: 440px;
 
 	@include respond-to(medium) {
-		margin: -80px 5px 5px 0;
+		top: 240px;
 	}
 
 	@include respond-to(large) {
-		margin: -90px 5px 5px 0;
+		
 	}
 }
 
@@ -116,43 +140,52 @@
 
 	.header_left_wrap {
 	width: 90%;
-	margin: 60px auto 20px;
+	margin: 50px auto 20px;
 	overflow: hidden;
 	transition: all 0.5s ease;
 
 		@include respond-to(small) {
 			width: 90%;
-			margin: 60px auto 20px;
+			margin: 40px auto 20px;
+		}
+
+		@include respond-to(small-medium) {
+			 margin: 60px auto 20px;
 		}
 
 		@include respond-to(medium) {
-			width: 90%;
-			margin: 50px auto 20px;
+			width: 30%;
+			float: left;
+			margin: 70px 0 0 10%;
 		}
 
 		@include respond-to(large) {
-			width: 30%;
-			float: left;
-			margin: 90px 0 0 10%;
+			width: 25%;
+			margin: 60px 0 0 15%;
 		}
 
 		h1 {
 			font-family: $font-one;
 			color: black;
-			@include font-size(3.8);
-			line-height: 55px;
+			@include font-size(3.4);
+			line-height: 50px;
 			text-align: center;
 			font-weight: 400;
 			transition: all 0.5s ease;
 
 			@include respond-to(small) {
+				@include font-size(4);
+				line-height: 60px;
+			}
+
+			@include respond-to(small-medium) {
 				@include font-size(4.8);
 				line-height: 68px;
 			}
 
 			@include respond-to(medium) {
-				@include font-size(6);
-				line-height: 85px;
+				@include font-size(4.5);
+				line-height: 65px;
 			}
 
 			@include respond-to(large) {
@@ -179,7 +212,7 @@
 		}
 
 		.logo_graph {
-			@include font-size(3.8);
+			@include font-size(3.4);
 			color: black;
 			text-align: center;
 			width: 100%;
@@ -190,7 +223,7 @@
 			}
 
 			@include respond-to(medium) {
-				@include font-size(5.4);
+				@include font-size(4.8);
 			}
 
 			@include respond-to(large) {
@@ -209,7 +242,7 @@
 	overflow: hidden;
 	transition: all 0.5s ease; 
 
-		@include respond-to(large) {
+		@include respond-to(medium) {
 			width: 50%;
 			float: left;
 			margin: 30px 10% 0 0;
@@ -223,9 +256,9 @@
 			display: none;
 			transition: all 0.5s ease;
 
-			@include respond-to(large) {
+			@include respond-to(medium) {
 				display: block;
-				@include font-size(4);
+				@include font-size(3);
 				text-align: center;
 			}
 		}
@@ -235,19 +268,21 @@
 			@include font-size(1);
 			line-height: 1em;
 			text-align: center;
-			width: 70%;
+			width: 55%;
 			margin: 0 auto 10px;
 			color: #333;
 			text-transform: uppercase;
 			transition: all 0.5s ease;
 
-			@include respond-to(large) {
-				width: 90%;
+			@include respond-to(small) {
+				width: 300px;
 				margin-top: 10px;
 			}
 
-			@include respond-to(xlarge) {
-			width: 70%;
+			@include respond-to(medium-large) {
+				@include font-size(1.1);
+				line-height: 1.1em;
+				width: 350px;
 			}
 		}//h2
 
@@ -264,10 +299,6 @@
 			transition: all 0.5s ease;
 
 			@include respond-to(medium) {
-				@include font-size(1.2);
-			}
-
-			@include respond-to(large) {
 				display: none;
 			}
 		} // header_right_mid_accent
@@ -275,7 +306,7 @@
 		h4 {
 			font-family: $font-two;
 			@include font-size(0.8);
-			line-height: 18px;
+			line-height: 14px;
 			color: #666;
 			width: 65%;
 			margin: 0 auto 20px;
@@ -283,8 +314,24 @@
 			padding-top: 10px;
 			transition: all 0.5s ease;
 
-			@include respond-to(large) {
-				width: 90%;
+			@include respond-to(small) {
+				@include font-size(0.9);
+				line-height: 20px;
+			}
+
+			@include respond-to(small-medium) {
+				@include font-size(0.9);
+				width: 57%;
+				line-height: 21px;
+			}
+
+			@include respond-to(medium) {
+				width: 100%;
+				line-height: 19px;
+			}
+
+			@include respond-to(medium-large) {
+				width: 400px;
 			}
 
 			@include respond-to(xlarge) {
@@ -296,11 +343,48 @@
 			display: none;
 			transition: all 0.5s ease;
 
-			@include respond-to(large) {
+			@include respond-to(medium) {
 				display: block;
-				@include font-size(4);
+				@include font-size(3);
 				text-align: center;
 			}
 		} // header_right_bot_accent
 	} // header_right_wrap
 } // hero_wrapper
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+// STICKY HERO
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
+.sticky_hero_text_wrap {
+	display: none;
+	width: 100%;
+	height: 50px;
+	background: url(gfx/paper_back.jpg) repeat;
+	transition: all 0.5s ease;
+}
+
+.sticky_hero_text_wrap p {
+	text-align: center;
+	font-family: $font-one;
+	@include font-size(1.4);
+	display: block;
+}
+
+.sticky_hide {
+	display: none;
+
+	@include respond-to(small-medium) {
+		display: inline-block;
+	}
+}
+
+.sticky {  
+    position: fixed;  
+    width: 100%;  
+    left: 0;  
+    top: 0;  
+    z-index: 100;  
+    border-top: 0;  
+}  

@@ -4,11 +4,33 @@
 	display: block;
 	overflow: hidden;
 
+	@include respond-to(medium) {
+		width: 680px;
+		@include clearfix;
+		margin: 0 auto;
+	}
+
+	@include respond-to(large) {
+		width: 700px;
+		float: left;
+	}
+
 	.color_info_box {
 		width: 94%;
 		background: rgba(255,255,255,0.5);
 		margin: 10px 3%;
 		display: block;
+
+		@include respond-to(small) {
+			width: 330px;
+			height: 330px;
+			margin: 10px auto;
+		}
+
+		@include respond-to(medium) {
+			float: left;
+			margin: 20px 0 0;
+		}
 
 		h2 {
 			font-family: $font-one;
@@ -56,8 +78,19 @@
 	#instafeed {
 		width: 100%;
 		display: block;
-		overflow: hidden;
 		margin: 10px auto;
+
+		@include respond-to(small) {
+			width: 333px;
+			height: 333px;
+		}
+
+		@include respond-to(medium) {
+			width: 333px;
+			height: 333px;
+			float: left;
+			margin: 20px 0 0 17px;
+		}
 
 		.insta_link_img {
 			width: 94%;
@@ -65,10 +98,20 @@
 			height: 0;
 			padding-bottom: 94%;
 			display: block;
-			box-shadow: 1px 1px 1px #333;
-			@include transition (all 1.0s ease-in-out);
+			box-shadow: 2px 2px 2px #333;
 			background: $accent;
 			position: relative;
+
+			@include respond-to(small) {
+				width: 330px;
+				height: 330px;
+				padding-bottom: 0;
+				margin: 0;
+			}
+
+			@include respond-to(medium) {
+				float: left;
+			}
 
 			&:hover, &:focus {
 
@@ -79,7 +122,6 @@
 				img {
 					@include opacity(0.5);
 				} // img
-
 			}
 
 			p {
@@ -91,7 +133,6 @@
 				margin: 0 auto;
 				display: block;
 				@include opacity(0);
-				@include transition (all 1.0s ease-in-out);
 
 				.insta_link_text_under {
 					display: block;
@@ -106,7 +147,12 @@
 				position: absolute;
 				top: 0;
 				left: 0;
-				@include transition (all 1.0s ease-in-out);
+				@include transition (opacity 0.5s ease-in-out);
+
+				@include respond-to(small) {
+					width: 330px;
+					height: 330px;
+				}
 			} // img
 		} // a
 	} // instafeed
@@ -116,18 +162,35 @@
 		margin: 0px auto;
 		display: block;
 
+		@include respond-to(medium) {
+			width: 680px;
+			margin: 0 auto;
+			float: left;
+		}
+
 		a.tweet_box {
 			width: 94%;
 			margin: 10px auto;
 			display: block;
 			background: rgba(255,255,255,0.5);
 			color: #333;
-			min-height: 80px;
+			overflow: hidden;
 			position: relative;
 			@include transition (all 1.0s ease-in-out);
 
+			@include respond-to(small) {
+				width: 330px;
+				padding: 7px 0;
+			}
+
+			@include respond-to(medium) {
+				width: 680px;
+				margin: 10px auto 0;
+				float: left;
+			}
+
 			&:hover, &:focus {
-				background: $accent;
+				background: $twitter;
 				@include opacity(0.6);
 
 				.insta_caption {
@@ -140,37 +203,33 @@
 
 			}
 
-			.tweet_icons {
-				width: 40px;
-				@include clearfix;
-				display: inline-block;
-				float: left;
-				@include transition (all 1.0s ease-in-out);
-
-				span {
-					@include font-size(1.8);
-					margin: 5px;
-					float: left;
-					display: block;
-					color: $accent;
-					@include opacity(0.8);
-
-					.icon-twitter {
-						margin: 5px 5px 0 5px;
-					} // icon-twitter
-				} // span
-			} // tweet_icons
-
 			.insta_caption {
-				width: 85%;
-				float: right;
+				width: 90%;
 				margin: 0;
-				@include font-size(1.2);
-				padding:  7px 3px 0 0;
+				font-family: $font-two;
+				@include font-size(1);
+				padding:  5px 5%;
 				color: #333;
-				letter-spacing: 0.04em;
-				line-height: 22px;
+				line-height: 21px;
 				@include transition (all 1.0s ease-in-out);
+
+
+				@include respond-to(small) {
+					width: 300px;
+					padding: 5px 4%;
+				}
+
+				@include respond-to(medium) {
+					width: 650px;
+				}
+			} // insta caption
+
+			.blue_twitter {
+				padding: 10px 10px 0 15px;
+				@include font-size(2);
+				color: $twitter;
+				float: left;
+				@include opacity(0.7);
 			}
 
 			.tweet_follow {
@@ -182,7 +241,17 @@
 				@include opacity(0);
 				@include transition (all 1.0s ease-in-out);
 				letter-spacing: 0.03em;
-			}
+
+				@include respond-to(small) {
+				top: 35%;
+				left: 25%;
+				} // small
+
+				@include respond-to(medium) {
+				top: 30%;
+				left: 38%;
+				} // small
+			} // tweet follow
 		} // tweet_box
 	}// color_tweet_box
 } // colorful_wrap

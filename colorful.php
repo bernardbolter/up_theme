@@ -28,5 +28,12 @@
 
 	<div id="instafeed">
 		
-	</div><!-- color_tweet_box -->
+	</div><!-- instafeed -->
+
+	<div class="color_tweet_box">
+		<a href="http://www.twitter.com/pullupgallery" class="tweet_box">
+			<span class="icon-twitter blue_twitter"></span><p class="insta_caption">Posting up on Grant and Sutter getting started on #PowellStreet1895 #sf #pullupgallery</p>
+			<p class="tweet_follow"><span class="icon-twitter"></span> follow on twitter</p>
+		</a> <!-- tweet_box -->
+	</div> <!-- color_tweet_box -->
 </div><!-- colorful_wrap -->
