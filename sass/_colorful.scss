@@ -61,11 +61,11 @@
 
 		p {
 			font-family: $font-two;
-			width: 80%;
+			width: 85%;
 			@include font-size(1);
-			line-height: 19px;
+			line-height: 20px;
 			margin: 0 auto;
-			text-indent: 25px;
+			text-align: center;
 		} // p
 
 		.color_accent {

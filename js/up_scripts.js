@@ -26,3 +26,9 @@ $(window).load(function() {
 				$this.html($this.text().replace(/(?:\s|^)(?:#(?!(?:\d+|\w+?_|_\w+?)(?:\s|$)))(\w+)(?=\s|$)/g, '<span style="color: #204f86; opacity: 0.8;">$&</span>'));
 	});
 });
+
+$(document).ready(function() {
+$('.contact_nav').singlePageNav({
+		speed: 2000
+	});        
+});

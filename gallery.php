@@ -8,7 +8,7 @@
 		<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
 		<div class="frame_rap">
-			<a href="#">
+			<a href="<?php echo get_permalink(); ?>">
 				<section class="frame_top">
 					<div class="frame_top_left"></div>
 					<div class="frame_top_mid"></div>
@@ -29,8 +29,11 @@
 				</section>
 			</a>
 			<div class="frame_tag">
-					<p class="frame_tag_title"><?php the_title(); ?></p>
-					<p class="frame_tag_info"><?php echo get_field('location') ?> . <?php echo get_field('date'); ?></p>
+				<p class="frame_tag_title"><?php echo get_field('title'); ?></p>
+				<div class="frame_tag_rap">	
+					<img src="<?php echo get_field('red_pin') ?>" alt="red push pin">
+					<p class="frame_tag_info"><?php echo get_field('location'); ?> . <?php echo get_field('date'); ?></p>
+				</div>
 			</div>
 		</div> <!-- frame_rap -->
 

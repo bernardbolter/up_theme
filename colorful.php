@@ -22,7 +22,7 @@
 			<span class="icon-Y"></span>
 		</div>
 		<h4>by Bernard John Bolter IV</h4>
-		<p>They especially invite inspection of these painting marvels, which they have had the hounour of introducing, and which have been met with so much approval.</p>
+		<p>This series of historical photo paintings span the extent of modernity, from the first mechanical images of the modern metropolis to the post contemporary appropriation of the 21st century.</p>
 		<div class="color_accent"><span class="icon-accent_two"></span></div>
 	</div><!-- color_info_box -->
 
@@ -32,7 +32,7 @@
 
 	<div class="color_tweet_box">
 		<a href="http://www.twitter.com/pullupgallery" class="tweet_box">
-			<span class="icon-twitter blue_twitter"></span><p class="insta_caption">Posting up on Grant and Sutter getting started on #PowellStreet1895 #sf #pullupgallery</p>
+			<span class="icon-twitter blue_twitter"></span><p class="insta_caption">Pulling up on Grant & Sutter. Getting to work on #PowellStreet1895 #pullupgallery</p>
 			<p class="tweet_follow"><span class="icon-twitter"></span> follow on twitter</p>
 		</a> <!-- tweet_box -->
 	</div> <!-- color_tweet_box -->

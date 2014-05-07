@@ -1,7 +1,265 @@
 .footer_moulding {
 	width: 100%;
-	height: 36px;
+	height: 35px;
 	display: block;
 	overflow: hidden;
 	background: url(gfx/wood_moulding.jpg) repeat-x;
+	border-bottom: 1px solid black;
+}
+
+#wood_footer {
+	width: 100%;
+	overflow: hidden;
+	background: url(gfx/wood_back.jpg) repeat;
+	@include clearfix;
+
+	.contact_rap {
+		@include clearfix;
+
+		@include respond-to(large) {
+			width: 1000px;
+			margin: 0 auto;
+		}
+	}
+
+
+	.contact_left {
+		width: 88%;
+		margin: 20px 3%;
+
+		@include respond-to(medium) {
+			width: 40%;
+			margin: 20px 5%;
+			float: left;
+		}
+
+		@include respond-to(large) {
+			width: 450px;
+			margin: 20px 50px 20px 0;
+		}
+
+		.contact_social {
+			width: 100%;
+			overflow: hidden;
+			margin: 10px 0 20px;
+
+			li {
+				float: left;
+				padding: 14px 7px;
+			} // li
+
+			a {
+				@include font-size(2);
+				color: white;
+				padding: 15px;
+				transition: all 1s ease;
+				background: url(gfx/so_back.png) no-repeat 1.5px 1.5px;
+			} // a
+
+			.soc_instagram a:hover {
+				color: shade($instagram, 40%);
+			}
+
+			.soc_facebook a:hover {
+				color: shade($facebook, 40%);
+			}
+
+			.soc_twitter a:hover {
+				color: shade($twitter, 30%);
+			}
+		} // contact social
+
+		.wood_info {
+			width: 100%;
+			background: #eee;
+			box-shadow: 3px 3px 3px #111;
+			padding: 3% 3% 30px 3%;
+
+			.wood_info_title_rap {
+				width: 272px;
+				margin: 15px auto 15px;
+				display: block;
+				@include clearfix;
+
+				img {
+					width: 30px;
+					float: left;
+					margin-top: 5px;
+				}
+
+				h1 {
+					font-family: $font-one;
+					@include font-size(2.2);
+					float: left;
+				}
+
+				.sm_accent {
+					float: left;
+					width: 10px;
+					margin: 20px 5px 0;
+					background: black;
+					height: 3px;
+				}
+			} // wood info title rap
+
+			.contact_para {
+				font-family: $font-two;
+				@include font-size(1);
+				line-height: 20px;
+				text-indent: 20px;
+				width: 90%;
+				margin: 10px auto;
+			} // contact para
+
+			.contact_location {
+				font-family: $font-three;
+				@include font-size(0.8);
+				line-height: 12px;
+				padding: 5px 15px 5px 5px;
+				text-align: right;
+				margin: 15px 0;
+				background: #555;
+				color: white;
+				letter-spacing: 0.05em;
+				box-shadow: 2px 2px 2px #333;
+				text-shadow: 1px 1px 1px #333;
+			} // contact location
+
+			.contact_info_title {
+				text-align: center;
+				@include font-size(1.8);
+				color: #555;
+				text-transform: uppercase;
+				border-bottom: 1px solid #555;
+				padding: 5px 0;
+				margin: 10px;
+			} // contact info title
+
+			.contact_info_undertitle {
+				text-align: center;
+				text-transform: uppercase;
+				@include font-size(1.9);
+				font-weight: 700;
+				margin: 5px 0;
+				letter-spacing: 0.08em;
+			}
+
+			.contact_info {
+				text-align: center;
+				margin: 5px 0;
+				@include font-size(1.5);
+				letter-spacing: 0.04em;
+			}
+		} // wood info
+	} // contact left
+
+	.contact_right {
+		width: 94%;
+		margin: 0 3%;
+
+		@include respond-to(medium) {
+			width: 40%;
+			margin: 20px 5%;
+			float: left;
+		} 
+
+		@include respond-to(large) {
+			width: 400px;
+			margin: 20px 0 20px 50px;
+		}
+
+		.contact_form_title_rap {
+			width: 100%;
+			display: block;
+			overflow: hidden;
+			@include clearfix;
+
+			.contact_form_title {
+				background: white;
+				box-shadow: 3px 3px 3px black;
+				padding: 15px;
+				@include font-size(2);
+				text-align: right;
+				display: inline-block;
+				float: right;
+				@include clearfix;
+				margin: 20px 5px;
+			} // contact form title
+		}
+
+		.wood_contact {
+			display: block;
+			width: 100%;
+		}
+
+		.wpcf7-form {
+
+			p {
+				color: #eee;
+				@include font-size(1.3);
+				line-height: 26px;
+			}
+
+			input, textarea {
+				font-family: sans-serif;
+				color: #333;
+				box-shadow: inset 3px 3px 3px #666;
+				padding: 7px;
+				border-radius: 0;
+				@include font-size(1);
+				letter-spacing: 0.03em;
+				background: url(gfx/paper_back.jpg) repeat;
+			}
+
+			input:focus, textarea:focus {
+				border-color: $accent;
+			}
+
+			.wpcf7-submit {
+				background: white;
+				text-shadow: none;
+				color: #666;
+				font-family: $font-one;
+				@include font-size(1.6);
+				padding: 10px 10px 7px 10px ;
+				border: none;
+				box-shadow: 3px 3px 3px black;;
+				margin: 5px;
+				font-weight: 400;
+				text-transform: uppercase;
+				transition: all 1s ease;
+			}
+
+			.wpcf7-submit:hover {
+				color: black;
+				text-decoration: underline;
+			}
+
+			.wpcf7-response-output {
+				background: white;
+				@include font-size(1.4);
+				line-height: 22px;
+			}
+
+			.ajax-loader {
+				background: white;
+			}
+		} // wpcf7 form
+	} // contact right
+} // wood footer
+
+.wood_smallprint {
+	width: 80%;
+	margin: 30px auto;
+	display: block;
+	
+	p {
+		font-family: sans-serif;
+		color: rgba(0,0,0,0.4);
+		@include font-size(0.5);
+		line-height: 12px;
+		text-align: center;
+		background: rgba(255,255,255,0.2);
+		padding: 7px 15px 7px;
+	}
 }

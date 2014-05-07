@@ -3,6 +3,7 @@
 	overflow: hidden;
 	display: block;
 	background: url(gfx/gallery_back.jpg) repeat;
+	padding-bottom: 30px;
 }
 
 .gallery_rap {
@@ -188,10 +189,14 @@
 	} //a
 	.frame_tag {
 	width: 200px;
-	margin: 20px 10px 10px 90px;
+	margin: 20px 10px 10px 60px;
 	background: #fff;
 	box-shadow: 2px 2px 2px #333;
 	display: block;
+
+	@include respond-to(small) {
+		margin: 20px 10px 10px 90px;
+	}
 
 	.frame_tag_title {
 		font-family: $font-one;
@@ -202,15 +207,25 @@
 		text-align: right;
 		padding: 15px 10px 5px; 
 	} // frame_tag_title
+	
+	.frame_tag_rap {
+		@include clearfix;
+		
+		img {
+			float: left;
+			margin-left: 7px;
+		}
 
-	.frame_tag_info {
-		font-family: $font-two;
-		@include font-size(0.8);
-		line-height: 11px;
-		color: #222;
-		margin: 0;
-		text-align: right;
-		padding: 0px 10px 10px;
-	} // frame_tag_info
+		.frame_tag_info {
+			font-family: $font-two;
+			@include font-size(0.8);
+			line-height: 11px;
+			color: #222;
+			margin: 0;
+			text-align: right;
+			padding: 0px 10px 10px;
+			float: right;
+		} // frame_tag_info
+	} // frame_tag_rap
 } // frame_tag
 } // frame_rap

@@ -9,6 +9,8 @@
 
 	.small_hero_wrapper {
 		@include clearfix;
+		width: 100%;
+		margin: 0 auto;
 	}
 
 	a {
@@ -17,24 +19,69 @@
 		margin: 5px auto;
 		overflow: hidden;
 		color: #222;
-		width: 230px;
+		width: 310px;
+
+		@include respond-to(small) {
+			width: 380px;
+		}
 
 		@include respond-to(small-medium) {
-			width: 380px;
+			width: 530px;
+		}
+
+		@include respond-to(medium) {
+			width: 670px;
+		}
+
+		@include respond-to(medium-large) {
+			width: 840px;
+		}
+
+		@include respond-to(large) {
+			width: 1000px;
 		}
 
 		img {
 			display: inline-block;
 			float: left;
-			height: 30px;
-			margin: 8px 10px 0;
+			height: 35px;
+			margin: 6px 0 0;
+		}
+
+		.sm_accent {
+			height: 3px;
+			width: 96px;
+			background: black;
+			margin: 22px 5px 0;
+			float: left;
+
+			@include respond-to(small) {
+				width: 131px;
+			}
+
+			@include respond-to(small-medium) {
+				width: 116px;
+			}
+
+			@include respond-to(medium) {
+				width: 186px;
+			}
+
+			@include respond-to(medium-large) {
+				width: 271px;
+			}
+
+			@include respond-to(large) {
+				width: 351px;
+			}
+
 		}
 
 		h1 {
 			font-family: $font-one;
-			@include font-size(2.2);
+			@include font-size(2.4);
 			float: left;
-			letter-spacing: 0.03em;
+			letter-spacing: 0.05em;
 		}
 	}
 }
