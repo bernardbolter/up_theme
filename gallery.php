@@ -2,7 +2,7 @@
 	<div class="gallery_rap">
 	<?php get_template_part( 'colorful'); ?>
 
-		<?php $the_query = new WP_Query( 'cat=3&posts_per_page=-1' ); ?>
+		<?php $the_query = new WP_Query( 'cat=2&posts_per_page=-1' ); ?>
 
 		<?php if ( $the_query->have_posts() ) : ?>
 		<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>

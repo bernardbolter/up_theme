@@ -134,12 +134,12 @@ Text Domain: up
   font-style: normal; }
 
 ::selection {
-  background: #cc0000;
+  background: #a2191f;
   color: #eee;
   /* Safari */ }
 
 ::-moz-selection {
-  background: #cc0000;
+  background: #a2191f;
   /* Firefox */
   color: #eee; }
 
@@ -410,12 +410,12 @@ body {
   z-index: 999; }
 
 #hero_top {
-  background: url(gfx/border/top.png) repeat-x;
+  background: url(gfx/border_top.png) repeat-x;
   height: 10px;
   margin: 5px auto 0; }
 
 #hero_bot {
-  background: url(gfx/border/bot.png) repeat-x;
+  background: url(gfx/border_bot.png) repeat-x;
   height: 10px;
   left: 88px;
   top: 545px;
@@ -442,7 +442,7 @@ body {
   float: right; }
 
 #hero_border_left {
-  background: url(gfx/border/left.png) repeat-y;
+  background: url(gfx/border_left.png) repeat-y;
   width: 10px;
   top: 88px;
   height: 385px;
@@ -453,7 +453,7 @@ body {
       height: 184px; } }
 
 #hero_border_right {
-  background: url(gfx/border/right.png) repeat-y;
+  background: url(gfx/border_right.png) repeat-y;
   width: 10px;
   top: 88px;
   height: 385px;
@@ -720,7 +720,6 @@ body {
   width: 100%;
   display: block;
   overflow: hidden;
-  background: url(gfx/con_back.jpg) repeat;
   -webkit-box-shadow: 0px 4px 4px 0 #444;
   box-shadow: 0px 4px 4px 0 #444;
   position: relative;
@@ -744,6 +743,12 @@ body {
         transition: all 1s ease; }
       #site-navigation ul > li > a:hover {
         color: black; }
+
+.about-navigation {
+  background: url(gfx/retina_wood.png) repeat; }
+
+.main-navigation {
+  background: url(gfx/con_back.jpg) repeat; }
 
 #gallery {
   width: 100%;
@@ -807,12 +812,12 @@ body {
       .frame_rap a .frame_top .frame_top_left {
         width: 43px;
         height: 43px;
-        background: url(gfx/frame/top_left.png) no-repeat;
+        background: url(gfx/frame_top_left.png) no-repeat;
         float: left; }
       .frame_rap a .frame_top .frame_top_mid {
         width: 184px;
         height: 43px;
-        background: url(gfx/frame/top.png) repeat-x;
+        background: url(gfx/frame_top.png) repeat-x;
         float: left; }
         @media only screen and (min-width: 401px) {
           .frame_rap a .frame_top .frame_top_mid {
@@ -820,7 +825,7 @@ body {
       .frame_rap a .frame_top .frame_top_right {
         width: 43px;
         height: 43px;
-        background: url(gfx/frame/top_right.png) no-repeat;
+        background: url(gfx/frame_top_right.png) no-repeat;
         float: left; }
     .frame_rap a .frame_mid {
       *zoom: 1; }
@@ -832,7 +837,7 @@ body {
       .frame_rap a .frame_mid .frame_mid_left {
         width: 43px;
         height: 184px;
-        background: url(gfx/frame/left.png) repeat-y;
+        background: url(gfx/frame_left.png) repeat-y;
         float: left; }
         @media only screen and (min-width: 401px) {
           .frame_rap a .frame_mid .frame_mid_left {
@@ -874,7 +879,7 @@ body {
       .frame_rap a .frame_mid .frame_mid_right {
         width: 43px;
         height: 184px;
-        background: url(gfx/frame/right.png) repeat-y;
+        background: url(gfx/frame_right.png) repeat-y;
         float: left; }
         @media only screen and (min-width: 401px) {
           .frame_rap a .frame_mid .frame_mid_right {
@@ -889,12 +894,12 @@ body {
       .frame_rap a .frame_bot .frame_bot_left {
         width: 43px;
         height: 43px;
-        background: url(gfx/frame/bot_left.png) no-repeat;
+        background: url(gfx/frame_bot_left.png) no-repeat;
         float: left; }
       .frame_rap a .frame_bot .frame_bot_mid {
         width: 184px;
         height: 43px;
-        background: url(gfx/frame/bot.png) repeat-x;
+        background: url(gfx/frame_bot.png) repeat-x;
         float: left; }
         @media only screen and (min-width: 401px) {
           .frame_rap a .frame_bot .frame_bot_mid {
@@ -902,7 +907,7 @@ body {
       .frame_rap a .frame_bot .frame_bot_right {
         width: 43px;
         height: 43px;
-        background: url(gfx/frame/bot_right.png) no-repeat;
+        background: url(gfx/frame_bot_right.png) no-repeat;
         float: left; }
   .frame_rap .frame_tag {
     width: 200px;
@@ -1006,6 +1011,8 @@ body {
         color: #23355b; }
       #wood_footer .contact_left .contact_social .soc_twitter a:hover {
         color: #2c6bb2; }
+      #wood_footer .contact_left .contact_social .soc_pinterest a:hover {
+        color: #791317; }
     #wood_footer .contact_left .wood_info {
       width: 100%;
       background: #eee;
@@ -1039,12 +1046,12 @@ body {
           height: 3px; }
       #wood_footer .contact_left .wood_info .contact_para {
         font-family: leanderregular, serif;
-        font-size: 10px;
-        font-size: 1rem;
-        line-height: 20px;
+        font-size: 12px;
+        font-size: 1.2rem;
+        line-height: 24px;
         text-indent: 20px;
         width: 90%;
-        margin: 10px auto; }
+        margin: 10px auto 25px; }
       #wood_footer .contact_left .wood_info .contact_location {
         font-family: acknowledgementmedium, sans-serif;
         font-size: 8px;
@@ -1141,7 +1148,7 @@ body {
       letter-spacing: 0.03em;
       background: url(gfx/paper_back.jpg) repeat; }
     #wood_footer .contact_right .wpcf7-form input:focus, #wood_footer .contact_right .wpcf7-form textarea:focus {
-      border-color: red; }
+      border-color: #cb2027; }
     #wood_footer .contact_right .wpcf7-form .wpcf7-submit {
       background: white;
       text-shadow: none;
@@ -1229,7 +1236,7 @@ body {
     #colorful_wrap .color_info_box .colorful_title {
       font-size: 12px;
       font-size: 1.2rem;
-      color: red;
+      color: #cb2027;
       text-shadow: 2px 2px 2px #333;
       text-align: center; }
     #colorful_wrap .color_info_box h4 {
@@ -1275,7 +1282,7 @@ body {
       display: block;
       -webkit-box-shadow: 2px 2px 2px #333;
       box-shadow: 2px 2px 2px #333;
-      background: red;
+      background: #cb2027;
       position: relative; }
       @media only screen and (min-width: 401px) {
         #colorful_wrap #instafeed .insta_link_img {
@@ -1528,3 +1535,49 @@ body {
       -webkit-box-shadow: 7px 7px 7px 2px #333;
       box-shadow: 7px 7px 7px 2px #333;
       width: 100%; }
+    #painting .painting_rap .painting_info {
+      background: white;
+      -webkit-box-shadow: 2px 2px 2px #333;
+      box-shadow: 2px 2px 2px #333;
+      padding: 2%;
+      margin: 30px 3%;
+      width: 90%; }
+      @media only screen and (min-width: 401px) {
+        #painting .painting_rap .painting_info {
+          width: 330px;
+          float: right;
+          margin: 30px 0; } }
+      #painting .painting_rap .painting_info .paint_title {
+        font-size: 25px;
+        font-size: 2.5rem;
+        margin: 10px 10px 5px;
+        text-align: right; }
+      #painting .painting_rap .painting_info .paint_info {
+        font-family: leanderregular, serif;
+        font-size: 10px;
+        font-size: 1rem;
+        text-align: right;
+        color: #333;
+        margin: 0 10px; }
+      #painting .painting_rap .painting_info .paint_medium {
+        font-weight: 400;
+        font-size: 12px;
+        font-size: 1.2rem;
+        text-align: right;
+        padding: 25px 10px 5px;
+        letter-spacing: 0.03em;
+        margin: 0; }
+      #painting .painting_rap .painting_info .paint_size_date {
+        font-weight: 400;
+        font-size: 12px;
+        font-size: 1.2rem;
+        text-align: right;
+        letter-spacing: 0.03em;
+        margin: 0 10px 10px; }
+
+#about_main {
+  width: 100%;
+  overflow: hidden;
+  display: block;
+  background: url(gfx/con_back.jpg) repeat;
+  padding-bottom: 30px; }

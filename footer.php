@@ -5,9 +5,10 @@
 		<div class="contact_left">
 			<div class="contact_social">
 				<ul>
-					<li class="soc_instagram"><a href="#"><span class="icon-instagram"></span></a></li>
-					<li class="soc_twitter"><a href="#"><span class="icon-twitter2"></span></a></li>
-					<li class="soc_facebook"><a href="#"><span class="icon-facebook2"></span></a></li>
+					<li class="soc_instagram"><a href="http://instagram.com/pullupgallery"><span class="icon-instagram"></span></a></li>
+					<li class="soc_twitter"><a href="https://twitter.com/PullUpGallery"><span class="icon-twitter2"></span></a></li>
+					<li class="soc_facebook"><a href="https://facebook.com/bernard.bolter"><span class="icon-facebook2"></span></a></li>
+					<li class="soc_pinterest"><a href="https://facebook.com/bernard.bolter"><span class="icon-pinterest"></span></a></li>
 				</ul>
 			</div>
 			<div class="wood_info">
@@ -20,7 +21,6 @@
 				</div> <!-- wood_info_title_rap -->
 
 				<p class="contact_para">Thank you for checking out the Pullup Gallery online. Drop a line through the contact form or by email if you have any questions or would just like to say hello after meeting on the street.</p>
-				<p class="contact_para">Check the input box if you would like to be put on the Pullup Gallery's email list and recieved updates from the world wide adventure that the gallery will soon be taking.</p>
 				<p class="contact_location">current location:<br> San Francisco, California</p>
 				<p class="contact_info_title">Contact Info:</p>
 				<p class="contact_info_undertitle">The Pullup Gallery</p>

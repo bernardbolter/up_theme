@@ -35,7 +35,52 @@
 		img {
 			box-shadow: 7px 7px 7px 2px #333;
 			width: 100%;
-		} // .teh_painting
+		} // .the_painting
+
+		.painting_info {
+			background: white;
+			box-shadow: 2px 2px 2px #333;
+			padding: 2%;
+			margin: 30px 3%;
+			width: 90%;
+
+			@include respond-to(small) {
+				width: 330px;
+				float: right;
+				margin: 30px 0;
+			}
+
+			.paint_title {
+				@include font-size(2.5);
+				margin: 10px 10px 5px;
+				text-align: right;
+			}
+
+			.paint_info {
+				font-family: $font-two;
+				@include font-size(1);
+				text-align: right;
+				color: #333;
+				margin: 0 10px;
+			}
+
+			.paint_medium {
+				font-weight: 400;
+				@include font-size(1.2);
+				text-align: right;
+				padding: 25px 10px 5px;
+				letter-spacing: 0.03em;
+				margin: 0;
+			}
+
+			.paint_size_date {
+				font-weight: 400;
+				@include font-size(1.2);
+				text-align: right;
+				letter-spacing: 0.03em;
+				margin: 0 10px 10px;
+			}
+		}
 
 	} // .painting_rap
 } // #painting

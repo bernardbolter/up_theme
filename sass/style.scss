@@ -1,13 +1,10 @@
-/*
+/*!
 Theme Name: up-theme
 Theme URI: http://www.pullupgallery.com
 Author: Bernard John Bolter IV
 Author URI: http://www.smoothism.com
 Description: THE EXTRAORDINARY ALL-IN-ONE MOBILE ART STUDIO AND GALLERY
 Version: 1.0
-License: GNU General Public License
-License URI: license.txt
-Text Domain: up
 */
 
 @import "bourbon/bourbon";
@@ -20,3 +17,4 @@ Text Domain: up
 @import "colorful";
 @import "small_hero";
 @import "painting";
+@import "about";

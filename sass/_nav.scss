@@ -2,7 +2,6 @@
 	width: 100%;
 	display: block;
 	overflow: hidden;
-	background: url(gfx/con_back.jpg) repeat;
 	box-shadow: 0px 4px 4px 0 #444;
 	position: relative;
 	z-index: 899;
@@ -33,3 +32,11 @@
 		} // li
 	} // ul
 } // site-navigation
+
+.about-navigation {
+	background: url(gfx/retina_wood.png) repeat;
+}
+
+.main-navigation {
+	background: url(gfx/con_back.jpg) repeat;
+}

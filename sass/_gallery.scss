@@ -67,14 +67,14 @@
 			.frame_top_left {
 				width: 43px;
 				height: 43px;
-				background: url(gfx/frame/top_left.png) no-repeat;
+				background: url(gfx/frame_top_left.png) no-repeat;
 				float: left;
 			} // frame_top_left
 
 			.frame_top_mid {
 				width: 184px;
 				height: 43px;
-				background: url(gfx/frame/top.png) repeat-x;
+				background: url(gfx/frame_top.png) repeat-x;
 				float: left;
 
 				@include respond-to(small) {
@@ -85,7 +85,7 @@
 			.frame_top_right {
 				width: 43px;
 				height: 43px;
-				background: url(gfx/frame/top_right.png) no-repeat;
+				background: url(gfx/frame_top_right.png) no-repeat;
 				float: left;
 			} // frame_top_right
 		} // frame_top
@@ -96,7 +96,7 @@
 			.frame_mid_left {
 				width: 43px;
 				height: 184px;
-				background: url(gfx/frame/left.png) repeat-y;
+				background: url(gfx/frame_left.png) repeat-y;
 				float: left;
 
 				@include respond-to(small) {
@@ -149,7 +149,7 @@
 			.frame_mid_right {
 				width: 43px;
 				height: 184px;
-				background: url(gfx/frame/right.png) repeat-y;
+				background: url(gfx/frame_right.png) repeat-y;
 				float: left;
 
 				@include respond-to(small) {
@@ -164,14 +164,14 @@
 			.frame_bot_left {
 				width: 43px;
 				height: 43px;
-				background: url(gfx/frame/bot_left.png) no-repeat;
+				background: url(gfx/frame_bot_left.png) no-repeat;
 				float: left;
 			} // frame_bot_left
 
 			.frame_bot_mid {
 				width: 184px;
 				height: 43px;
-				background: url(gfx/frame/bot.png) repeat-x;
+				background: url(gfx/frame_bot.png) repeat-x;
 				float: left;
 
 				@include respond-to(small) {
@@ -182,7 +182,7 @@
 			.frame_bot_right {
 				width: 43px;
 				height: 43px;
-				background: url(gfx/frame/bot_right.png) no-repeat;
+				background: url(gfx/frame_bot_right.png) no-repeat;
 				float: left;
 			} // frame_bot_right
 		} // frame_bot

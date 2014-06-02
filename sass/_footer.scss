@@ -67,6 +67,11 @@
 			.soc_twitter a:hover {
 				color: shade($twitter, 30%);
 			}
+
+			.soc_pinterest a:hover {
+				color: shade($pinterest, 40%);
+			}
+			
 		} // contact social
 
 		.wood_info {
@@ -104,11 +109,11 @@
 
 			.contact_para {
 				font-family: $font-two;
-				@include font-size(1);
-				line-height: 20px;
+				@include font-size(1.2);
+				line-height: 24px;
 				text-indent: 20px;
 				width: 90%;
-				margin: 10px auto;
+				margin: 10px auto 25px;
 			} // contact para
 
 			.contact_location {

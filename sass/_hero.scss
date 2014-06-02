@@ -33,13 +33,13 @@
 /////////////////////////////////////////////////////////////////////////////////////////////////
 
 #hero_top {
-	background: url(gfx/border/top.png) repeat-x;
+	background: url(gfx/border_top.png) repeat-x;
 	height: 10px;
 	margin: 5px auto 0;
 }
 
 #hero_bot {
-	background: url(gfx/border/bot.png) repeat-x;
+	background: url(gfx/border_bot.png) repeat-x;
 	height: 10px;
 	left: 88px;
 	top: 545px;
@@ -70,7 +70,7 @@
 }
 
 #hero_border_left {
-	background: url(gfx/border/left.png) repeat-y;
+	background: url(gfx/border_left.png) repeat-y;
 	width: 10px;
 	top: 88px;
 	height: 385px;
@@ -83,7 +83,7 @@
 }
 
 #hero_border_right {
-	background: url(gfx/border/right.png) repeat-y;
+	background: url(gfx/border_right.png) repeat-y;
 	width: 10px;
 	top: 88px;
 	height: 385px;
