@@ -1,13 +1,10 @@
-/*
+/*!
 Theme Name: up-theme
 Theme URI: http://www.pullupgallery.com
 Author: Bernard John Bolter IV
 Author URI: http://www.smoothism.com
 Description: THE EXTRAORDINARY ALL-IN-ONE MOBILE ART STUDIO AND GALLERY
 Version: 1.0
-License: GNU General Public License
-License URI: license.txt
-Text Domain: up
 */
 @font-face {
   font-family: 'icomoon';
@@ -134,12 +131,12 @@ Text Domain: up
   font-style: normal; }
 
 ::selection {
-  background: #a2191f;
+  background: #510c0f;
   color: #eee;
   /* Safari */ }
 
 ::-moz-selection {
-  background: #a2191f;
+  background: #510c0f;
   /* Firefox */
   color: #eee; }
 
@@ -856,11 +853,10 @@ body {
           -webkit-transition: all 1s ease-in-out;
           transition: all 1s ease-in-out; }
         .frame_rap a .frame_mid .frame_image p {
-          margin: -180px 0 0;
+          margin: -160px 0 0;
           word-wrap: break-word;
           font-size: 13px;
           font-size: 1.3rem;
-          line-height: 30px;
           color: #000;
           z-index: 999;
           padding: 10px;
@@ -868,7 +864,7 @@ body {
           letter-spacing: 0.02em; }
           @media only screen and (min-width: 401px) {
             .frame_rap a .frame_mid .frame_image p {
-              margin: -220px 0 0; } }
+              margin: -195px 0 0; } }
           .frame_rap a .frame_mid .frame_image p span.frame_click {
             display: block;
             font-size: 9px;
@@ -961,7 +957,8 @@ body {
   width: 100%;
   overflow: hidden;
   background: url(gfx/wood_back.jpg) repeat;
-  *zoom: 1; }
+  *zoom: 1;
+  padding-bottom: 75px; }
   #wood_footer:before, #wood_footer:after {
     content: " ";
     display: table; }
@@ -996,7 +993,9 @@ body {
       margin: 10px 0 20px; }
       #wood_footer .contact_left .contact_social li {
         float: left;
-        padding: 14px 7px; }
+        padding: 14px 7px;
+        width: 55px;
+        height: 32px; }
       #wood_footer .contact_left .contact_social a {
         font-size: 20px;
         font-size: 2rem;
@@ -1020,7 +1019,7 @@ body {
       box-shadow: 3px 3px 3px #111;
       padding: 3% 3% 30px 3%; }
       #wood_footer .contact_left .wood_info .wood_info_title_rap {
-        width: 272px;
+        width: 252px;
         margin: 15px auto 15px;
         display: block;
         *zoom: 1; }
@@ -1029,6 +1028,9 @@ body {
           display: table; }
         #wood_footer .contact_left .wood_info .wood_info_title_rap:after {
           clear: both; }
+        @media only screen and (min-width: 401px) {
+          #wood_footer .contact_left .wood_info .wood_info_title_rap {
+            width: 272px; } }
         #wood_footer .contact_left .wood_info .wood_info_title_rap img {
           width: 30px;
           float: left;
@@ -1040,32 +1042,48 @@ body {
           float: left; }
         #wood_footer .contact_left .wood_info .wood_info_title_rap .sm_accent {
           float: left;
-          width: 10px;
+          width: 0;
           margin: 20px 5px 0;
           background: black;
           height: 3px; }
+          @media only screen and (min-width: 401px) {
+            #wood_footer .contact_left .wood_info .wood_info_title_rap .sm_accent {
+              width: 10px; } }
       #wood_footer .contact_left .wood_info .contact_para {
         font-family: leanderregular, serif;
-        font-size: 12px;
-        font-size: 1.2rem;
-        line-height: 24px;
+        font-size: 10px;
+        font-size: 1rem;
+        line-height: 20px;
         text-indent: 20px;
         width: 90%;
         margin: 10px auto 25px; }
+      #wood_footer .contact_left .wood_info .contact_para_2 {
+        font-family: league_gothicregular, sans-serif;
+        font-size: 15px;
+        font-size: 1.5rem;
+        line-height: 28px;
+        width: 90%;
+        margin: 20px auto 25px;
+        text-align: center; }
+      #wood_footer .contact_left .wood_info .current_map {
+        width: 90%;
+        margin: 10px auto 0;
+        border: 1px solid #555;
+        height: 150px; }
       #wood_footer .contact_left .wood_info .contact_location {
-        font-family: acknowledgementmedium, sans-serif;
-        font-size: 8px;
-        font-size: 0.8rem;
-        line-height: 12px;
-        padding: 5px 15px 5px 5px;
+        font-family: league_gothicregular, sans-serif;
+        font-size: 14px;
+        font-size: 1.4rem;
+        line-height: 20px;
+        padding: 5px 2%;
         text-align: right;
-        margin: 15px 0;
+        margin: 0 auto 30px;
         background: #555;
+        border: 1px solid #555;
         color: white;
         letter-spacing: 0.05em;
-        -webkit-box-shadow: 2px 2px 2px #333;
-        box-shadow: 2px 2px 2px #333;
-        text-shadow: 1px 1px 1px #333; }
+        width: 86%;
+        text-transform: uppercase; }
       #wood_footer .contact_left .wood_info .contact_info_title {
         text-align: center;
         font-size: 18px;
@@ -1081,7 +1099,7 @@ body {
         font-size: 19px;
         font-size: 1.9rem;
         font-weight: 700;
-        margin: 5px 0;
+        margin: 18px 0;
         letter-spacing: 0.08em; }
       #wood_footer .contact_left .wood_info .contact_info {
         text-align: center;
@@ -1177,18 +1195,58 @@ body {
       background: white; }
 
 .wood_smallprint {
-  width: 80%;
-  margin: 30px auto;
+  width: 90%;
+  margin: 50px auto 0;
   display: block; }
   .wood_smallprint p {
     font-family: sans-serif;
     color: rgba(0, 0, 0, 0.4);
-    font-size: 5px;
-    font-size: 0.5rem;
-    line-height: 12px;
-    text-align: center;
+    font-size: 8px;
+    font-size: 0.8rem;
+    line-height: 19px;
+    text-align: justify;
     background: rgba(255, 255, 255, 0.2);
-    padding: 7px 15px 7px; }
+    padding: 20px;
+    text-indent: 25px;
+    border-radius: 14px; }
+
+.mc4wp-form {
+  width: 80%;
+  margin: 0 auto; }
+  .mc4wp-form .mc4wp_email_text {
+    background: #fff;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+    font-size: 8px;
+    font-size: 0.8rem;
+    font-family: acknowledgementmedium, sans-serif;
+    line-height: 15px; }
+  .mc4wp-form #mc4wp_email {
+    border-radius: 0 0 0;
+    border: 1px solid black;
+    font-family: leanderregular, serif;
+    font-size: 10px;
+    font-size: 1rem; }
+  .mc4wp-form .mc4wp_button input[type="submit"] {
+    background: #eee;
+    border: 1px solid black;
+    color: #333;
+    text-transform: lowercase;
+    text-shadow: none;
+    border-radius: 0 0 0;
+    font-size: 8px;
+    font-size: 0.8rem;
+    padding: 5px 15px;
+    font-family: acknowledgementmedium, sans-serif;
+    letter-spacing: 0.1em;
+    -webkit-box-shadow: 1px 1px 1px black;
+    box-shadow: 1px 1px 1px black; }
+  .mc4wp-form .mc4wp_button input[type="submit"]:hover {
+    background: #fff;
+    -webkit-box-shadow: 2.5px 2.5px 2.5px #333;
+    box-shadow: 2.5px 2.5px 2.5px #333; }
 
 #colorful_wrap {
   width: 100%;
@@ -1444,7 +1502,7 @@ body {
     margin: 5px auto;
     overflow: hidden;
     color: #222;
-    width: 310px; }
+    width: 280px; }
     @media only screen and (min-width: 401px) {
       #small_hero a {
         width: 380px; } }
@@ -1467,9 +1525,9 @@ body {
       margin: 6px 0 0; }
     #small_hero a .sm_accent {
       height: 3px;
-      width: 96px;
+      width: 85px;
       background: black;
-      margin: 22px 5px 0;
+      margin: 22px 3px 0;
       float: left; }
       @media only screen and (min-width: 401px) {
         #small_hero a .sm_accent {
@@ -1579,5 +1637,234 @@ body {
   width: 100%;
   overflow: hidden;
   display: block;
-  background: url(gfx/con_back.jpg) repeat;
+  background: url(gfx/about_back.jpg) repeat;
   padding-bottom: 30px; }
+  #about_main .about_rap {
+    width: 94%;
+    margin: 3% auto;
+    overflow: hidden;
+    max-width: 1100px; }
+    #about_main .about_rap .about_pullup_story {
+      width: 100%;
+      max-width: 572px;
+      margin: 0 auto; }
+      @media only screen and (min-width: 800px) {
+        #about_main .about_rap .about_pullup_story {
+          float: right;
+          width: 48%;
+          margin-left: 2%; } }
+      #about_main .about_rap .about_pullup_story .about_pullup_title_rap {
+        width: 100%;
+        display: block;
+        *zoom: 1; }
+        #about_main .about_rap .about_pullup_story .about_pullup_title_rap:before, #about_main .about_rap .about_pullup_story .about_pullup_title_rap:after {
+          content: " ";
+          display: table; }
+        #about_main .about_rap .about_pullup_story .about_pullup_title_rap:after {
+          clear: both; }
+        #about_main .about_rap .about_pullup_story .about_pullup_title_rap .about_pullup_title {
+          font-family: league_gothicregular, sans-serif;
+          font-size: 20px;
+          font-size: 2rem;
+          background: #fff;
+          padding: 10px 20px;
+          margin: 30px 0 15px;
+          text-align: left;
+          -webkit-box-shadow: 2px 2px 2px #333;
+          box-shadow: 2px 2px 2px #333;
+          color: #222;
+          float: left; }
+      #about_main .about_rap .about_pullup_story .about_clip_box {
+        width: 100%;
+        display: block; }
+        #about_main .about_rap .about_pullup_story .about_clip_box img {
+          margin: 0 auto;
+          z-index: 9999;
+          position: relative;
+          display: block; }
+      #about_main .about_rap .about_pullup_story .about_pullup_text_rap {
+        width: 100%;
+        display: block;
+        overflow: hidden;
+        background: url(gfx/ricepaper2.png) repeat;
+        margin: -35px 0 0; }
+        #about_main .about_rap .about_pullup_story .about_pullup_text_rap h2.about_pullup_text_heading {
+          font-family: league_gothicregular, sans-serif;
+          font-size: 18px;
+          font-size: 1.8rem;
+          text-align: center;
+          margin: 60px 5% 2%;
+          text-transform: uppercase; }
+        #about_main .about_rap .about_pullup_story .about_pullup_text_rap h3.about_pullup_text_quote {
+          width: 80%;
+          margin: 3px auto;
+          font-family: serif;
+          font-size: 10px;
+          font-size: 1rem;
+          color: #666;
+          text-indent: 20px; }
+          #about_main .about_rap .about_pullup_story .about_pullup_text_rap h3.about_pullup_text_quote span.quote_color {
+            color: #222; }
+        #about_main .about_rap .about_pullup_story .about_pullup_text_rap h4.about_pullup_text_name {
+          display: block;
+          margin: 3px auto 20px;
+          width: 80%;
+          text-align: right;
+          font-family: serif;
+          font-size: 8px;
+          font-size: 0.8rem; }
+        #about_main .about_rap .about_pullup_story .about_pullup_text_rap p.about_pullup_text {
+          font-family: sans-serif;
+          color: #333;
+          width: 90%;
+          margin: 0 auto 30px;
+          text-indent: 20px; }
+      #about_main .about_rap .about_pullup_story .paper_shadow {
+        margin: 0 0 20px;
+        display: block; }
+    #about_main .about_rap .about_pullup_comp {
+      width: 100%;
+      overflow: hidden;
+      margin: 0 auto 30px;
+      *zoom: 1;
+      max-width: 572px; }
+      #about_main .about_rap .about_pullup_comp:before, #about_main .about_rap .about_pullup_comp:after {
+        content: " ";
+        display: table; }
+      #about_main .about_rap .about_pullup_comp:after {
+        clear: both; }
+      @media only screen and (min-width: 800px) {
+        #about_main .about_rap .about_pullup_comp {
+          float: left;
+          width: 48%;
+          margin-right: 2%; } }
+      #about_main .about_rap .about_pullup_comp .about_pullup_comp_title {
+        background: white;
+        -webkit-box-shadow: 2px 2px 2px #333;
+        box-shadow: 2px 2px 2px #333;
+        padding: 2px 10px;
+        margin: 2px 0 15px 15px;
+        float: left;
+        text-transform: lowercase;
+        letter-spacing: 0.05em; }
+        #about_main .about_rap .about_pullup_comp .about_pullup_comp_title span {
+          margin: 0 0 0 5px;
+          top: 2px;
+          position: relative; }
+      #about_main .about_rap .about_pullup_comp img {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: block; }
+    #about_main .about_rap .about_color_story {
+      width: 100%;
+      display: block;
+      overflow: hidden;
+      margin: 0 auto 30px;
+      max-width: 572px; }
+      @media only screen and (min-width: 800px) {
+        #about_main .about_rap .about_color_story {
+          float: left;
+          width: 48%;
+          margin-right: 2%; } }
+      #about_main .about_rap .about_color_story .about_color_title_box {
+        width: 280px;
+        background: #fff;
+        -webkit-box-shadow: 2px 2px 2px #333;
+        box-shadow: 2px 2px 2px #333;
+        margin: 10px auto; }
+        #about_main .about_rap .about_color_story .about_color_title_box .about_color_title {
+          width: 214px;
+          margin: 10px auto 0;
+          display: block;
+          padding: 20px 0 0; }
+          #about_main .about_rap .about_color_story .about_color_title_box .about_color_title span {
+            color: #cb2027;
+            text-shadow: 1px 1px 1px #222; }
+        #about_main .about_rap .about_color_story .about_color_title_box h4 {
+          font-family: league_gothicregular, sans-serif;
+          color: #333;
+          text-align: center;
+          margin: 0;
+          font-size: 10px;
+          font-size: 1rem;
+          letter-spacing: 0.06em; }
+        #about_main .about_rap .about_color_story .about_color_title_box p {
+          font-family: serif;
+          font-size: 10px;
+          font-size: 1rem;
+          color: #666;
+          text-align: center;
+          width: 80%;
+          margin: 10px auto 0;
+          padding-bottom: 15px;
+          line-height: 16px; }
+      #about_main .about_rap .about_color_story .about_clip_box {
+        width: 100%;
+        display: block; }
+        #about_main .about_rap .about_color_story .about_clip_box img {
+          margin: 0 auto;
+          z-index: 9999;
+          position: relative;
+          display: block; }
+      #about_main .about_rap .about_color_story .about_color_text_rap {
+        width: 100%;
+        display: block;
+        overflow: hidden;
+        background: url(gfx/ricepaper2.png) repeat;
+        margin: -35px 0 0;
+        padding: 50px 0 0; }
+        #about_main .about_rap .about_color_story .about_color_text_rap p {
+          width: 90%;
+          color: #333;
+          margin: 5px auto;
+          font-family: serif;
+          text-indent: 20px;
+          font-size: 11px;
+          font-size: 1.1rem; }
+        #about_main .about_rap .about_color_story .about_color_text_rap h4 {
+          font-family: serif;
+          font-weight: bold;
+          font-size: 10px;
+          font-size: 1rem;
+          color: #333;
+          text-align: right;
+          padding: 10px 10% 20px 0; }
+      #about_main .about_rap .about_color_story img.about_color_text_shadow {
+        margin: 0;
+        display: block;
+        width: 100%; }
+    #about_main .about_rap .about_color_comp {
+      width: 100%;
+      overflow: hidden;
+      margin: 0 auto 30px;
+      *zoom: 1;
+      max-width: 572px; }
+      #about_main .about_rap .about_color_comp:before, #about_main .about_rap .about_color_comp:after {
+        content: " ";
+        display: table; }
+      #about_main .about_rap .about_color_comp:after {
+        clear: both; }
+      @media only screen and (min-width: 800px) {
+        #about_main .about_rap .about_color_comp {
+          float: right;
+          width: 48%;
+          margin-left: 2%; } }
+      #about_main .about_rap .about_color_comp .about_color_comp_title {
+        background: white;
+        -webkit-box-shadow: 2px 2px 2px #333;
+        box-shadow: 2px 2px 2px #333;
+        padding: 2px 10px;
+        margin: 2px 0 15px 15px;
+        float: left;
+        text-transform: lowercase;
+        letter-spacing: 0.05em; }
+        #about_main .about_rap .about_color_comp .about_color_comp_title span {
+          margin: 0 0 0 5px;
+          top: 2px;
+          position: relative; }
+      #about_main .about_rap .about_color_comp img {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: block; }

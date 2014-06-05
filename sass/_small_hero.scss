@@ -19,7 +19,7 @@
 		margin: 5px auto;
 		overflow: hidden;
 		color: #222;
-		width: 310px;
+		width: 280px;
 
 		@include respond-to(small) {
 			width: 380px;
@@ -50,9 +50,9 @@
 
 		.sm_accent {
 			height: 3px;
-			width: 96px;
+			width: 85px;
 			background: black;
-			margin: 22px 5px 0;
+			margin: 22px 3px 0;
 			float: left;
 
 			@include respond-to(small) {
@@ -79,9 +79,13 @@
 
 		h1 {
 			font-family: $font-one;
-			@include font-size(2.4);
+			@include font-size(2);
 			float: left;
 			letter-spacing: 0.05em;
+
+			@include respond-to(small) {
+				@include font-size(2.4);
+			}
 		}
 	}
 }

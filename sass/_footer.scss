@@ -12,6 +12,7 @@
 	overflow: hidden;
 	background: url(gfx/wood_back.jpg) repeat;
 	@include clearfix;
+	padding-bottom: 75px;
 
 	.contact_rap {
 		@include clearfix;
@@ -46,6 +47,8 @@
 			li {
 				float: left;
 				padding: 14px 7px;
+				width: 55px;
+				height: 32px;
 			} // li
 
 			a {
@@ -81,53 +84,86 @@
 			padding: 3% 3% 30px 3%;
 
 			.wood_info_title_rap {
-				width: 272px;
+				width: 252px;
 				margin: 15px auto 15px;
 				display: block;
 				@include clearfix;
 
+				@include respond-to(small) {
+					width: 272px;
+				}
+
 				img {
-					width: 30px;
-					float: left;
-					margin-top: 5px;
+					display: none;
+
+					@include respond-to(small) {
+						width: 30px;
+						float: left;
+						margin-top: 5px;
+					}
 				}
 
 				h1 {
 					font-family: $font-one;
-					@include font-size(2.2);
+					@include font-size(2);
 					float: left;
+
+					@include respond-to(small) {
+					@include font-size(2.2);
+					}
 				}
 
 				.sm_accent {
 					float: left;
-					width: 10px;
+					width: 0;
 					margin: 20px 5px 0;
 					background: black;
 					height: 3px;
+
+					@include respond-to(small) {
+						width: 10px;
+					}
 				}
 			} // wood info title rap
 
 			.contact_para {
 				font-family: $font-two;
-				@include font-size(1.2);
-				line-height: 24px;
+				@include font-size(1);
+				line-height: 20px;
 				text-indent: 20px;
 				width: 90%;
 				margin: 10px auto 25px;
 			} // contact para
 
+			.contact_para_2 {
+				font-family: $font-one;
+				@include font-size(1.5);
+				line-height: 28px;
+				width: 90%;
+				margin: 20px auto 25px;
+				text-align: center;
+			} // contact para 2
+
+			.current_map {
+				width: 90%;
+				margin: 10px auto 0;
+				border: 1px solid #555;
+				height: 150px;
+			}
+
 			.contact_location {
-				font-family: $font-three;
-				@include font-size(0.8);
-				line-height: 12px;
-				padding: 5px 15px 5px 5px;
+				font-family: $font-one;
+				@include font-size(1.4);
+				line-height: 20px;
+				padding: 5px 2%;
 				text-align: right;
-				margin: 15px 0;
+				margin: 0 auto 30px;
 				background: #555;
+				border: 1px solid #555;
 				color: white;
 				letter-spacing: 0.05em;
-				box-shadow: 2px 2px 2px #333;
-				text-shadow: 1px 1px 1px #333;
+				width: 86%;
+				text-transform: uppercase;
 			} // contact location
 
 			.contact_info_title {
@@ -145,7 +181,7 @@
 				text-transform: uppercase;
 				@include font-size(1.9);
 				font-weight: 700;
-				margin: 5px 0;
+				margin: 18px 0;
 				letter-spacing: 0.08em;
 			}
 
@@ -228,7 +264,7 @@
 				@include font-size(1.6);
 				padding: 10px 10px 7px 10px ;
 				border: none;
-				box-shadow: 3px 3px 3px black;;
+				box-shadow: 3px 3px 3px black;
 				margin: 5px;
 				font-weight: 400;
 				text-transform: uppercase;
@@ -254,17 +290,61 @@
 } // wood footer
 
 .wood_smallprint {
-	width: 80%;
-	margin: 30px auto;
+	width: 90%;
+	margin: 50px auto 0;
 	display: block;
 	
 	p {
 		font-family: sans-serif;
 		color: rgba(0,0,0,0.4);
-		@include font-size(0.5);
-		line-height: 12px;
-		text-align: center;
+		@include font-size(0.8);
+		line-height: 19px;
+		text-align: justify;
 		background: rgba(255,255,255,0.2);
-		padding: 7px 15px 7px;
+		padding: 20px;
+		text-indent: 25px;
+		border-radius: 14px;
+	}
+}
+
+.mc4wp-form {
+	width: 80%;
+	margin: 0 auto;
+
+	.mc4wp_email_text {
+		background: #fff;
+		border: 1px solid black;
+		padding: 10px;
+		text-align: center;
+		color: #333;
+		@include font-size(0.8);
+		font-family: $font-three;
+		line-height: 15px;
+	}
+
+	#mc4wp_email {
+		border-radius: 0 0 0;
+		border: 1px solid black;
+		font-family: $font-two;
+		@include font-size(1);
+	}
+
+	.mc4wp_button input[type="submit"] {
+		background: #eee;
+		border: 1px solid black;
+		color: #333;
+		text-transform: lowercase;
+		text-shadow: none;
+		border-radius: 0 0 0;
+		@include font-size(0.8);
+		padding: 5px 15px;
+		font-family: $font-three;
+		letter-spacing: 0.1em;
+		box-shadow: 1px 1px 1px black;
+	}
+
+	.mc4wp_button input[type="submit"]:hover {
+			background: #fff;
+			box-shadow: 2.5px 2.5px 2.5px #333;
 	}
 }

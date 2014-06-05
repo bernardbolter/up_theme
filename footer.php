@@ -20,13 +20,26 @@
 					<img src="<?php bloginfo( 'template_url' ); ?>/gfx/sm_logo_right.svg" alt="logo accent right">
 				</div> <!-- wood_info_title_rap -->
 
-				<p class="contact_para">Thank you for checking out the Pullup Gallery online. Drop a line through the contact form or by email if you have any questions or would just like to say hello after meeting on the street.</p>
-				<p class="contact_location">current location:<br> San Francisco, California</p>
-				<p class="contact_info_title">Contact Info:</p>
+				<?php $the_query = new WP_Query( 'page_id=59' ); ?>
+
+				<?php if ( $the_query->have_posts() ) : ?>
+				<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+
+				<p class="contact_para"><?php echo get_field('first_para'); ?></p>
+				<p class="contact_para"><?php echo get_field('second_para'); ?></p>
+				<p><?php echo do_shortcode('[mc4wp_form]'); ?></p>
+				<p class="contact_para_2"><?php echo get_field('third_para'); ?></p>
+				<div class="current_map"><?php echo get_field('map_link'); ?></div>
+				<p class="contact_location">current location:<br><?php echo get_field('current_location'); ?></p>
 				<p class="contact_info_undertitle">The Pullup Gallery</p>
 				<p class="contact_info">Bernard John Bolter IV</p>
-				<p class="contact_info">info@pullupgallery</p>
-				<p class="contact_info">001.415.490.7702</p>
+				<p class="contact_info">info@pullupgallery.com</p>
+				<p class="contact_info"><?php echo get_field('phone_one'); ?></p>
+				<p class="contact_info"><?php echo get_field('phone_two'); ?></p>
+
+				<?php endwhile; ?>
+				<?php endif; ?>
+
 			</div><!-- .wood_info -->
 		</div><!-- contact_left -->
 		<div class="contact_right">
@@ -34,14 +47,13 @@
 				<p class="contact_form_title">Contact Form</p>
 			</div>
 			<div class="wood_contact">
-				<?php echo do_shortcode( '[contact-form-7 id="55" title="Contact form 1"]' ); ?>
+				<?php echo do_shortcode( '[contact-form-7 id="64" title="Pullup Gallery Contact Form"]' ); ?>
 			</div><!-- .wood_contact -->
+				<div class="wood_smallprint">
+						<p>All artwork images used on this website are the exclusive property of the Pullup Gallery. All rights reserved. Any other use of these artwork images, without the expressed written consent of the Pullup Gallery, is strictly prohibited. All artwork images used on this website have been embedded with a unique digital code, for the purpose of identification, and are copyright protected by United States and International Law.<br /><br />All rights resereved 2013-<?php echo date('Y'); ?>.</p> 
+				</div><!-- .wood_smallprint -->
 		</div><!-- contact_right -->
 	</div><!-- contact rap -->
-
-	<div class="wood_smallprint">
-			<p>The Pullup Gallery is street art initiative by Bernard John Bolter IV. The gallery first hit the streets in San Francisco, California in 2013. All rights resereved 2014. 
-	</div><!-- .wood_smallprint -->
 </footer><!-- #wood_footer -->
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

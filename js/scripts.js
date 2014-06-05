@@ -1421,7 +1421,7 @@ $(document).ready(function(){
         accessToken: '785386824.467ede5.5bf6ecb3d1ba45008205930d2a3f4ea9',
         limit: 1,
         resolution: 'low_resolution',
-        template: '<div class="instafeed_image"><a href="{{link}}" class="insta_link_img"><img src="{{image}}" /><p class="insta_link_text">#pullupgallery<span class="insta_link_text_under"><span class="icon-instagram"></span> follow on instagram</span></p></a></div>'
+        template: '<div class="instafeed_image"><a href="{{link}}" class="insta_link_img"><img src="{{image}}" nopin="true" /><p class="insta_link_text">#pullupgallery<span class="insta_link_text_under"><span class="icon-instagram"></span> follow on instagram</span></p></a></div>'
     });
     userFeed.run();
  });

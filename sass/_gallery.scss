@@ -121,10 +121,9 @@
 				} // img
 
 				p {
-					margin: -180px 0 0;
+					margin: -160px 0 0;
 					word-wrap: break-word;
 					@include font-size(1.3);
-					line-height: 30px;
 					color: #000;
 					z-index: 999;
 					padding: 10px;
@@ -132,7 +131,7 @@
 					letter-spacing: 0.02em;
 
 					@include respond-to(small) {
-						margin: -220px 0 0;
+						margin: -195px 0 0;
 					}
 
 

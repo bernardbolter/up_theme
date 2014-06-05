@@ -39,5 +39,6 @@
 
 		<?php endwhile; ?>
 		<?php endif; ?>
+		<script type="text/javascript" async  data-pin-color="grey" data-pin-hover="true" src="//assets.pinterest.com/js/pinit.js"></script>
 	</div> <!-- gallery rap -->
 </div> <!-- gallery -->

@@ -24,6 +24,7 @@ var sassSources = [
 var filesToMove = [
 	'./*.php',
 	'./*.png',
+	'./*.ico',
 	'./fonts/*'
 ];
 
