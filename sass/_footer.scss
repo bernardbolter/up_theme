@@ -55,7 +55,6 @@
 				@include font-size(2);
 				color: white;
 				padding: 15px;
-				transition: all 1s ease;
 				background: url(gfx/so_back.png) no-repeat 1.5px 1.5px;
 			} // a
 
@@ -268,7 +267,6 @@
 				margin: 5px;
 				font-weight: 400;
 				text-transform: uppercase;
-				transition: all 1s ease;
 			}
 
 			.wpcf7-submit:hover {

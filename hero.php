@@ -17,7 +17,7 @@
 						<div class="header_right_top_accent"><span class="icon-vic_descript_top"></span></div>
 						<h2>The Extraordinary All-In-One Mobile Studio and Gallery</h2>
 						<div class="header_right_mid_accent"><span class="icon-accent_three"></span></div>
-						<h4><span class="hero-bold">The Pullup Gallery</span>, hereby call attention to their New Styles of <span class="hero-slant">'Plein Air'</span> Painting - <span class="hero-bold">Plain Urban</span>, which, for taste and economy of price, they believe to be unequalled.</h4>	
+						<h4><span class="hero_accent_1">The Pullup Gallery</span> has re-invented the traditonal outdoor technique of <span class="hero_accent_2">'plein air'</span> painting and brought the easel into the streets, creating the new style, we like to call - <span class="hero_accent_2">'plain urban'</span> painting.</h4>	
 						<div class="header_right_bot_accent"><span class="icon-accent_one"></span></div>
 					</div> <!-- header_right_wrap -->
 				</div> <!-- hero_wrapper -->

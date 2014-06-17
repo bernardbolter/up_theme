@@ -314,6 +314,15 @@
 			padding-top: 10px;
 			transition: all 0.5s ease;
 
+			.hero_accent_1 {
+				color: #222;
+			}
+
+			.hero_accent_2 {
+				color: #222;
+				font-style: italic;
+			}
+
 			@include respond-to(small) {
 				@include font-size(0.9);
 				line-height: 20px;

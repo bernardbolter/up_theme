@@ -131,14 +131,14 @@ Version: 1.0
   font-style: normal; }
 
 ::selection {
-  background: #510c0f;
-  color: #eee;
+  background: #666;
+  color: #ddd;
   /* Safari */ }
 
 ::-moz-selection {
-  background: #510c0f;
+  background: #666;
   /* Firefox */
-  color: #eee; }
+  color: #ddd; }
 
 button, input[type="submit"] {
   border: 1px solid #245aa6;
@@ -652,6 +652,11 @@ body {
       padding-top: 10px;
       -webkit-transition: all 0.5s ease;
       transition: all 0.5s ease; }
+      .hero_wrapper .header_right_wrap h4 .hero_accent_1 {
+        color: #222; }
+      .hero_wrapper .header_right_wrap h4 .hero_accent_2 {
+        color: #222;
+        font-style: italic; }
       @media only screen and (min-width: 401px) {
         .hero_wrapper .header_right_wrap h4 {
           font-size: 9px;
@@ -721,28 +726,28 @@ body {
   box-shadow: 0px 4px 4px 0 #444;
   position: relative;
   z-index: 899; }
-  #site-navigation ul {
-    display: block;
-    float: right;
-    margin: 14px 5% 5px 0; }
-    #site-navigation ul > li {
-      list-style: none;
-      display: inline-block;
-      float: left; }
-      #site-navigation ul > li > a {
-        font-family: league_gothicregular, sans-serif;
-        font-size: 17px;
-        font-size: 1.7rem;
-        color: #888;
-        text-transform: uppercase;
-        margin: 0 0 0 5px;
-        -webkit-transition: all 1s ease;
-        transition: all 1s ease; }
-      #site-navigation ul > li > a:hover {
-        color: black; }
-
-.about-navigation {
-  background: url(gfx/retina_wood.png) repeat; }
+  #site-navigation .nav_rap {
+    max-width: 1050px;
+    width: 98%;
+    margin: 0 auto; }
+    #site-navigation .nav_rap ul {
+      display: block;
+      float: right;
+      margin: 14px 5% 5px 0; }
+      #site-navigation .nav_rap ul > li {
+        list-style: none;
+        display: inline-block;
+        float: left; }
+        #site-navigation .nav_rap ul > li > a {
+          font-family: league_gothicregular, sans-serif;
+          font-size: 17px;
+          font-size: 1.7rem;
+          color: #444;
+          text-transform: uppercase;
+          margin: 0 0 0 5px; }
+        #site-navigation .nav_rap ul > li > a:hover {
+          color: black;
+          text-decoration: underline; }
 
 .main-navigation {
   background: url(gfx/con_back.jpg) repeat; }
@@ -1001,8 +1006,6 @@ body {
         font-size: 2rem;
         color: white;
         padding: 15px;
-        -webkit-transition: all 1s ease;
-        transition: all 1s ease;
         background: url(gfx/so_back.png) no-repeat 1.5px 1.5px; }
       #wood_footer .contact_left .contact_social .soc_instagram a:hover {
         color: #304c62; }
@@ -1032,14 +1035,21 @@ body {
           #wood_footer .contact_left .wood_info .wood_info_title_rap {
             width: 272px; } }
         #wood_footer .contact_left .wood_info .wood_info_title_rap img {
-          width: 30px;
-          float: left;
-          margin-top: 5px; }
+          display: none; }
+          @media only screen and (min-width: 401px) {
+            #wood_footer .contact_left .wood_info .wood_info_title_rap img {
+              width: 30px;
+              float: left;
+              margin-top: 5px; } }
         #wood_footer .contact_left .wood_info .wood_info_title_rap h1 {
           font-family: league_gothicregular, sans-serif;
-          font-size: 22px;
-          font-size: 2.2rem;
+          font-size: 20px;
+          font-size: 2rem;
           float: left; }
+          @media only screen and (min-width: 401px) {
+            #wood_footer .contact_left .wood_info .wood_info_title_rap h1 {
+              font-size: 22px;
+              font-size: 2.2rem; } }
         #wood_footer .contact_left .wood_info .wood_info_title_rap .sm_accent {
           float: left;
           width: 0;
@@ -1180,9 +1190,7 @@ body {
       box-shadow: 3px 3px 3px black;
       margin: 5px;
       font-weight: 400;
-      text-transform: uppercase;
-      -webkit-transition: all 1s ease;
-      transition: all 1s ease; }
+      text-transform: uppercase; }
     #wood_footer .contact_right .wpcf7-form .wpcf7-submit:hover {
       color: black;
       text-decoration: underline; }
@@ -1546,10 +1554,14 @@ body {
           width: 351px; } }
     #small_hero a h1 {
       font-family: league_gothicregular, sans-serif;
-      font-size: 24px;
-      font-size: 2.4rem;
+      font-size: 20px;
+      font-size: 2rem;
       float: left;
       letter-spacing: 0.05em; }
+      @media only screen and (min-width: 401px) {
+        #small_hero a h1 {
+          font-size: 24px;
+          font-size: 2.4rem; } }
 
 .hide_title {
   display: none; }
@@ -1565,73 +1577,221 @@ body {
     width: 90%;
     max-width: 1050px;
     margin: 15px auto 50px; }
-    #painting .painting_rap h1 {
-      background: white;
-      -webkit-box-shadow: 2px 2px 2px 2px #333;
-      box-shadow: 2px 2px 2px 2px #333;
-      font-family: league_gothicregular, sans-serif;
-      font-size: 17px;
-      font-size: 1.7rem;
-      font-weight: 400;
-      letter-spacing: 0.03em;
-      color: #232323;
-      padding: 7px 20px 1px;
-      margin: 10px 0;
-      overflow: hidden;
-      display: inline-block; }
-      @media only screen and (min-width: 700px) {
-        #painting .painting_rap h1 {
-          font-size: 20px;
-          font-size: 2rem;
-          margin: 15px 0; } }
-      @media only screen and (min-width: 1050px) {
-        #painting .painting_rap h1 {
-          font-size: 23px;
-          font-size: 2.3rem;
-          margin: 20px 0; } }
-    #painting .painting_rap img {
-      -webkit-box-shadow: 7px 7px 7px 2px #333;
-      box-shadow: 7px 7px 7px 2px #333;
-      width: 100%; }
-    #painting .painting_rap .painting_info {
-      background: white;
-      -webkit-box-shadow: 2px 2px 2px #333;
-      box-shadow: 2px 2px 2px #333;
-      padding: 2%;
-      margin: 30px 3%;
-      width: 90%; }
-      @media only screen and (min-width: 401px) {
-        #painting .painting_rap .painting_info {
-          width: 330px;
-          float: right;
-          margin: 30px 0; } }
-      #painting .painting_rap .painting_info .paint_title {
-        font-size: 25px;
-        font-size: 2.5rem;
-        margin: 10px 10px 5px;
-        text-align: right; }
-      #painting .painting_rap .painting_info .paint_info {
-        font-family: leanderregular, serif;
-        font-size: 10px;
-        font-size: 1rem;
-        text-align: right;
-        color: #333;
-        margin: 0 10px; }
-      #painting .painting_rap .painting_info .paint_medium {
+    #painting .painting_rap .painting_top {
+      *zoom: 1; }
+      #painting .painting_rap .painting_top:before, #painting .painting_rap .painting_top:after {
+        content: " ";
+        display: table; }
+      #painting .painting_rap .painting_top:after {
+        clear: both; }
+      #painting .painting_rap .painting_top h1 {
+        background: white;
+        -webkit-box-shadow: 2px 2px 2px 2px #333;
+        box-shadow: 2px 2px 2px 2px #333;
+        font-family: league_gothicregular, sans-serif;
+        font-size: 17px;
+        font-size: 1.7rem;
         font-weight: 400;
-        font-size: 12px;
-        font-size: 1.2rem;
-        text-align: right;
-        padding: 25px 10px 5px;
         letter-spacing: 0.03em;
-        margin: 0; }
-      #painting .painting_rap .painting_info .paint_size_date {
-        font-weight: 400;
-        font-size: 12px;
-        font-size: 1.2rem;
-        text-align: right;
-        letter-spacing: 0.03em;
-        margin: 0 10px 10px; }
+        color: #232323;
+        padding: 7px 20px 1px;
+        margin: 10px 0;
+        overflow: hidden;
+        display: inline-block; }
+        @media only screen and (min-width: 700px) {
+          #painting .painting_rap .painting_top h1 {
+            font-size: 20px;
+            font-size: 2rem;
+            margin: 15px 0; } }
+        @media only screen and (min-width: 1050px) {
+          #painting .painting_rap .painting_top h1 {
+            font-size: 23px;
+            font-size: 2.3rem;
+            margin: 20px 0; } }
+      #painting .painting_rap .painting_top img {
+        -webkit-box-shadow: 7px 7px 7px 2px #333;
+        box-shadow: 7px 7px 7px 2px #333;
+        width: 100%; }
+      #painting .painting_rap .painting_top .painting_info {
+        background: white;
+        -webkit-box-shadow: 2px 2px 2px #333;
+        box-shadow: 2px 2px 2px #333;
+        padding: 2%;
+        margin: 30px 3%;
+        width: 90%; }
+        @media only screen and (min-width: 401px) {
+          #painting .painting_rap .painting_top .painting_info {
+            width: 330px;
+            float: right;
+            margin: 30px 0; } }
+        #painting .painting_rap .painting_top .painting_info .paint_title {
+          font-size: 25px;
+          font-size: 2.5rem;
+          margin: 10px 10px 5px;
+          text-align: right; }
+        #painting .painting_rap .painting_top .painting_info .paint_info {
+          font-family: leanderregular, serif;
+          font-size: 10px;
+          font-size: 1rem;
+          text-align: right;
+          color: #333;
+          margin: 0 10px; }
+        #painting .painting_rap .painting_top .painting_info .paint_name {
+          font-family: league_gothicregular, sans-serif;
+          font-size: 9px;
+          font-size: 0.9rem;
+          text-align: right;
+          margin: 0 10px;
+          letter-spacing: 0.03em;
+          color: #333; }
+          #painting .painting_rap .painting_top .painting_info .paint_name a {
+            color: #333; }
+            #painting .painting_rap .painting_top .painting_info .paint_name a:hover {
+              text-decoration: underline; }
+        #painting .painting_rap .painting_top .painting_info .paint_medium {
+          font-weight: 400;
+          font-size: 12px;
+          font-size: 1.2rem;
+          text-align: right;
+          padding: 25px 10px 5px;
+          letter-spacing: 0.03em;
+          margin: 0; }
+        #painting .painting_rap .painting_top .painting_info .paint_size_date {
+          font-weight: 400;
+          font-size: 12px;
+          font-size: 1.2rem;
+          text-align: right;
+          letter-spacing: 0.03em;
+          margin: 0 10px 10px; }
+        #painting .painting_rap .painting_top .painting_info .paint_info_line {
+          width: 100%;
+          margin: 10% auto;
+          height: 1px;
+          background-color: #222; }
+        #painting .painting_rap .painting_top .painting_info .paint_info_shop_rap {
+          width: 90%;
+          margin: 0 auto;
+          *zoom: 1; }
+          #painting .painting_rap .painting_top .painting_info .paint_info_shop_rap:before, #painting .painting_rap .painting_top .painting_info .paint_info_shop_rap:after {
+            content: " ";
+            display: table; }
+          #painting .painting_rap .painting_top .painting_info .paint_info_shop_rap:after {
+            clear: both; }
+          @media only screen and (min-width: 700px) {
+            #painting .painting_rap .painting_top .painting_info .paint_info_shop_rap {
+              width: 95%; } }
+          #painting .painting_rap .painting_top .painting_info .paint_info_shop_rap img {
+            float: left;
+            width: 20px;
+            height: 20px;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            margin: 16px 0 0 0; }
+          #painting .painting_rap .painting_top .painting_info .paint_info_shop_rap .paint_info_shop_inner {
+            float: right;
+            width: 80%; }
+            #painting .painting_rap .painting_top .painting_info .paint_info_shop_rap .paint_info_shop_inner p {
+              font-family: league_gothicregular, sans-serif;
+              font-size: 11px;
+              font-size: 1.1rem;
+              line-height: 18px;
+              text-align: right;
+              color: #333;
+              letter-spacing: 0.07em;
+              padding: 0;
+              margin: 0;
+              text-transform: uppercase; }
+              #painting .painting_rap .painting_top .painting_info .paint_info_shop_rap .paint_info_shop_inner p a {
+                color: #510c0f; }
+                #painting .painting_rap .painting_top .painting_info .paint_info_shop_rap .paint_info_shop_inner p a:hover {
+                  color: #cb2027; }
+              #painting .painting_rap .painting_top .painting_info .paint_info_shop_rap .paint_info_shop_inner p span {
+                opacity: 0.7;
+                font-size: 7px;
+                font-size: 0.7rem;
+                margin: 0 0 0 4px; }
+    #painting .painting_rap .painting_bottom {
+      width: 100%;
+      display: block; }
+      #painting .painting_rap .painting_bottom .painting_extra_rap {
+        *zoom: 1; }
+        #painting .painting_rap .painting_bottom .painting_extra_rap:before, #painting .painting_rap .painting_bottom .painting_extra_rap:after {
+          content: " ";
+          display: table; }
+        #painting .painting_rap .painting_bottom .painting_extra_rap:after {
+          clear: both; }
+        #painting .painting_rap .painting_bottom .painting_extra_rap .painting_original_rap {
+          width: 100%;
+          display: block;
+          margin: 8px auto;
+          max-width: 500px; }
+          @media only screen and (min-width: 875px) {
+            #painting .painting_rap .painting_bottom .painting_extra_rap .painting_original_rap {
+              width: 48%;
+              float: left;
+              margin-right: 2%; } }
+          #painting .painting_rap .painting_bottom .painting_extra_rap .painting_original_rap h2 {
+            background: #fff;
+            -webkit-box-shadow: 2px 2px 2px #333;
+            box-shadow: 2px 2px 2px #333;
+            font-family: leanderregular, serif;
+            font-size: 8px;
+            font-size: 0.8rem;
+            padding: 4px 8px;
+            margin: 8px 0;
+            float: left;
+            color: #444; }
+          #painting .painting_rap .painting_bottom .painting_extra_rap .painting_original_rap img {
+            margin: 0;
+            padding: 0;
+            display: block; }
+        #painting .painting_rap .painting_bottom .painting_extra_rap .painting_text_rap {
+          width: 100%;
+          margin: 30px 0 0 0; }
+          @media only screen and (min-width: 875px) {
+            #painting .painting_rap .painting_bottom .painting_extra_rap .painting_text_rap {
+              width: 48%;
+              float: left;
+              margin: 0 0 0 2%; } }
+          #painting .painting_rap .painting_bottom .painting_extra_rap .painting_text_rap .painting_clip_box {
+            width: 100%;
+            display: block; }
+            #painting .painting_rap .painting_bottom .painting_extra_rap .painting_text_rap .painting_clip_box img {
+              margin: 0 auto;
+              z-index: 9999;
+              position: relative;
+              display: block; }
+          #painting .painting_rap .painting_bottom .painting_extra_rap .painting_text_rap .painting_content_rap {
+            width: 100%;
+            max-width: 500px;
+            display: block;
+            overflow: hidden;
+            background: url(gfx/ricepaper2.png) repeat;
+            margin: -35px auto 0; }
+            #painting .painting_rap .painting_bottom .painting_extra_rap .painting_text_rap .painting_content_rap p.painting_content_text {
+              margin: 55px 8% 3%;
+              color: #555;
+              font-family: leanderregular, serif;
+              font-size: 10px;
+              font-size: 1rem;
+              line-height: 22px;
+              text-indent: 20px;
+              padding: 0; }
+            #painting .painting_rap .painting_bottom .painting_extra_rap .painting_text_rap .painting_content_rap p.painting_content_text_two {
+              margin: 15px 8% 8%;
+              color: #555;
+              font-family: leanderregular, serif;
+              font-size: 10px;
+              font-size: 1rem;
+              line-height: 22px;
+              text-indent: 20px;
+              padding: 0; }
+          #painting .painting_rap .painting_bottom .painting_extra_rap .painting_text_rap .content_shadow {
+            margin: 0 auto;
+            width: 100%;
+            max-width: 500px;
+            padding: 0;
+            display: block; }
 
 #about_main {
   width: 100%;
